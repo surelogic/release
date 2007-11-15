@@ -9,7 +9,7 @@
    <feature url="features/com.surelogic.jsure.feature_1.9.0.200711051721.jar" id="com.surelogic.jsure.feature" version="1.9.0.200711051721">
       <category name="JSure"/>
    </feature>
-   <feature url="features/com.surelogic.sierra.feature_1.0.0.200711051721.jar" id="com.surelogic.sierra.feature" version="1.0.0.200711051721">
+   <feature url="features/com.surelogic.sierra.feature_1.0.0.200711081638.jar" id="com.surelogic.sierra.feature" version="1.0.0.200711081638">
       <category name="Sierra"/>
    </feature>
    <category-def name="Sierra" label="Sierra">

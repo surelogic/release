@@ -3,13 +3,13 @@
    <description url="https://fluid.surelogic.com/update/eclipse">
       Releases of SureLogic&apos;s Eclipse-based tools.
    </description>
-   <feature url="features/com.surelogic.flashlight.feature_0.9.0.200711151643.jar" id="com.surelogic.flashlight.feature" version="0.9.0.200711151643">
+   <feature url="features/com.surelogic.flashlight.feature_0.9.0.200711210920.jar" id="com.surelogic.flashlight.feature" version="0.9.0.200711210920">
       <category name="Flashlight"/>
    </feature>
-   <feature url="features/com.surelogic.jsure.feature_1.9.0.200711151643.jar" id="com.surelogic.jsure.feature" version="1.9.0.200711151643">
+   <feature url="features/com.surelogic.jsure.feature_1.9.0.200711210920.jar" id="com.surelogic.jsure.feature" version="1.9.0.200711210920">
       <category name="JSure"/>
    </feature>
-   <feature url="features/com.surelogic.sierra.feature_1.0.1.200711151643.jar" id="com.surelogic.sierra.feature" version="1.0.1.200711151643">
+   <feature url="features/com.surelogic.sierra.feature_1.0.1.200711210920.jar" id="com.surelogic.sierra.feature" version="1.0.1.200711210920">
       <category name="Sierra"/>
    </feature>
    <category-def name="Sierra" label="Sierra">

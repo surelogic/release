@@ -1,0 +1,244 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1"/>
+    <title>Downloading and Installing the SureLogic Tools</title>
+    <style>
+      a.btn {
+        background-color: #ff5f1e;
+        color: #FFFFFF;
+        display: block;
+        font-size: 14px;
+        font-weight: bold;
+        margin-left: auto;
+        margin-right: auto;
+        outline: 1px solid #ff5f1e;
+        padding: 4px 0 4px;
+        text-align: center;
+        text-decoration: none;
+        width: 240px;
+      }
+    </style>
+  </head>
+  <body lang="EN-US">
+    
+    <h2><img src="./images/install-logo.png" alt="SureLogic"/> &mdash; Downloading and
+    Installing the SureLogic Tools</h2>
+
+    <p> It should take no more than 5 minutes for you to get up and
+    running if you already have a working Eclipse installed on your
+    machine. If you do not have Eclipse please go to the <a
+    href="http://www.eclipse.org/downloads/">Eclipse Download Site</a>
+    and download and install a copy. If you have any problems getting
+    up and running, please call Tim Halloran at (412) 722-3338 for
+    help. We want you to have a good experience with our product and
+    are ready to help (it can sometimes be difficult to navigate the
+    Eclipse plug-in installation and management user interface).</p>
+
+    <a class="btn" href="./surelogic-tools-3-2-0-20100511.zip">Download
+    Current Release</a>
+
+    <p>The SureLogic tools contained in the Zip downloaded above install
+    as a feature in your Eclipse IDE. They are installed (and
+    uninstalled) via the normal Eclipse mechanisms from an archived
+    update site that you obtain from SureLogic. The following tools are
+    available as Eclipse features:</p>
+
+    <dl>
+      <dt><em>Flashlight Client</em></dt>
+      <dd>Flashlight is a runtime profiler that illuminates threading behavior
+      and access to shared state. </dd>
+    </dl>
+    <dl>
+      <dt><em>JSure Client</em></dt>
+      <dd>JSure is a model-based static analysis tool that helps developers gain
+      confidence in their multi-threaded code, regardless of scale or
+      complexity.</dd>
+    </dl>
+    <dl>
+      <dt><em>Sierra Client</em></dt>
+      <dd>Sierra is a bug management tool that helps developers deal with the
+      often overwhelming number of findings produced by popular source code
+      analysis tools when analyzing large codebases.</dd>
+      <dt><em>Sierra Client Java 5 Compatibility Libraries (Optional)</em></dt>
+      <dd>The Java 5 compatibility libraries are <em>only</em>
+      necessary if you are using a Java 5 JRE or JDK to run
+      Sierra. This feature is not necessary if you are running Java 6
+      or higher. We recommend you use Java 6 or higher and <em>do
+      not</em> install this feature.</dd>
+      <dt><em>Sierra Local Team Server (Optional)</em></dt>
+      <dd>Install the Sierra Local Team Server feature if you want to
+      try out the local team server, used in the tutorials. Installing
+      this feature is recommended.</dd>
+    </dl>
+
+    <p>The tools may be installed and used in versions 3.3 and higher of
+    Eclipse. We do not recommend Eclipse 3.5 (due to a serious bug in
+    this release that occurs when updates are unarchived for
+    installation into Eclipse) and suggest you use 3.5.1 or above.
+    <strong><em>Before you begin:</em></strong> We recommend that you
+    have at least 512 MB of heap space and 128 MB of PermGen space on a
+    32-bit JVM, and 768 MB of heap space and 256 MB of PermGen space on
+    a 64-bit JVM.  You can change these settings my modifying the
+    <tt>-Xmx</tt> and <tt>-XX:MaxPermSize</tt> arguments in your
+    <em>eclipse.ini</em> file.</p>
+    
+    <ol>
+      <li>
+	<p>
+	  We find that installing the tools, especially for the first time, is
+	  better done from an archived update site, which you can find <a
+	  href="./surelogic-tools-3-2-0-20100511.zip">here</a>. This archive
+	  contains the Sierra, JSure, and Flashlight features.  If you are an
+	  advanced Eclipse user, you can also use our update site, located at <a
+	  href="http://surelogic.com/static/eclipse">http://surelogic.com/static/eclipse</a>
+	  and skip to step 3.
+	</p>
+      </li>
+
+      <li>
+	<p>Follow one of the next three steps (and skip the others)
+	based on what version of Eclipse you are using.</p>
+	<ol style="list-style-type: lower-alpha;">
+	  <li>
+	    <p><em>In Eclipse 3.5.1 (or greater):</em> Select 'Help |
+	    Install New Software&hellip;' to open the 'Install'
+	    dialog.  Click the 'Add&hellip;' button in the upper-right
+	    of the dialog.  In the 'Add Site' dialog that opens select
+	    the 'Archive&hellip;' button and point the file selection
+	    dialog that appears to the to the SureLogic archived
+	    update site file downloaded in step 1, then press 'Open'
+	    followed by 'OK'.  The 'Install' dialog should appear as
+	    shown in the figure below.</p>
+
+	    <img src="./images/install-eclipse-35.png" alt="Selecting features to install in Eclipse 3.5" />
+
+	    <p>Choose the features you want to install (as shown
+	    above), and press 'Next &gt;' and step through the
+	    remaining wizard dialog steps. The features you are
+	    installing are not digitally signed, however, you should
+	    allow them to be installed if you are warned by Eclipse
+	    that it can't verify them. Finally, you should restart
+	    Eclipse when the installation is completed.</p>
+	  </li>
+
+	  <li>
+	    <p><em>In Eclipse 3.4:</em> Select 'Help | Software
+	    Updates&hellip;' to open the 'Software Updates and
+	    Add-ons' dialog. Select the 'Available Software' tab and
+	    click the 'Add Site&hellip;' button. In the 'Add Site'
+	    dialog that opens select the 'Archive&hellip;' button and
+	    point the file selection dialog that appears to the to the
+	    SureLogic archived update site file downloaded in step 1,
+	    then press 'Open' followed by 'OK'. The 'Software Updates
+	    and Add-ons' dialog should appear as shown in the figure
+	    below.</p>
+
+	    <img src="./images/install-eclipse-34.png" alt="Selecting features to install in Eclipse 3.4" />
+
+	    <p>Choose the features you want to install, then press
+	    'Install&hellip;' (in the upper-right of the dialog
+	    <em>not</em> 'Close" in the lower-right of the dialog) and
+	    step through the remaining wizard dialog steps. The
+	    features you are installing are not digitally signed,
+	    however, you should allow them to be installed if you are
+	    warned by Eclipse that it can't verify them. Finally, you
+	    should restart Eclipse when the installation is
+	    completed.</p>
+	  </li>
+	  <li>
+	    <p><em>In Eclipse 3.3:</em> Select 'Help | Software
+	    Updates | Find and Install&hellip;' to open the
+	    'Install/Update' dialog. Select <em>Search for new
+	    features to install</em> and press 'Next &gt;'. Press the
+	    'New Archived Site&hellip;' and point the file selection
+	    dialog that appears to the SureLogic archived update site
+	    file downloaded in step 1 and press 'Open' and then
+	    'OK'. Ensure the archive file is the only site checked and
+	    press 'Finish'. The 'Updates' dialog should appear as
+	    shown in the figure below.</p>
+
+	    <img src="./images/install-eclipse-33.png" alt="Selecting Sierra features to install in Eclipse 3.3" />
+
+	    <p>Choose the features you want to install (as shown
+	    above), then press 'Next &gt;' and step through the
+	    remaining wizard dialog steps. The features you are
+	    installing are not digitally signed, however, you should
+	    allow them to be installed if you are warned by Eclipse
+	    that it can't verify them. Finally, you should restart
+	    Eclipse when the installation is completed.</p>
+	  </li>
+	</ol>
+      </li>
+
+      <li><p>When Eclipse restarts you should see an item on the
+      Eclipse main menu for each tool that you installed. The first
+      thing you need to do is to install the license provided to you
+      by SureLogic. To do this select the 'Manage SureLogic Licenses'
+      menu choice from the Eclipse main menu from any of the tools
+      (they all open a common dialog) as shown in the figure
+      below.</p>
+
+      <img src="./images/install-license-menu.png" alt="Main menu choice to install your license" />
+
+      <p>In the dialog that appears, highlight the type of license you
+      have, e.g., Flashlight, and press the 'Install License'
+      button as shown in the figure below.</p>
+
+      <img src="./images/install-license-dialog.png" alt="SureLogic license managment dialog showing a license to use Flashlight has been installed" />
+
+      <p>See the 'Getting started' chapter of any of the tool User
+      Guides for information on how you install your license and get
+      up and running with the tool. The tool User Guides can by opened
+      by selecting 'Help | Help Contents' from the Eclipse main
+      menu</p>
+      </li>
+
+      <li>
+	<p>To run the tutorials for Sierra, Flashlight, or JSure
+	select the 'Run <em>Tool</em> Tutorials' menu choice from the
+	Eclipse main menu for that tool. For example, For the
+	Flashlight tool you would select 'Flashlight | Run Flashlight
+	Tutorials' from the Eclipse main menu as shown in the figure
+	below.</p>
+
+	<img src="./images/install-tutorials-menu.png" alt="Main menu choice to install and run the Flashlight tutorials" />
+
+	<p>This action will import the tutorial projects into your
+	workspace and open the Eclipse help up to the beginning of the
+	first tutorial. We recommend that you take the time to step
+	through each tutorial.</p>
+
+	<p>Also notice the 'Send Tip for Improvement' and 'Send
+	Problem Report' menu items in the figure above. These menu
+	items are your <em>direct link</em> to interact with the
+	SureLogic engineers about your ideas to improve our tools and
+	to report any problems you encounter.</p>
+      </li>
+      <li>
+	<p>To learn more about how to use the tools select 'Help |
+	Help Contents' and open the Sierra, Flashlight, or JSure User
+	Guides. If you have installed JSure, you should also read the
+	JSure Annotation Guide. These guides contain tutorial and
+	reference information about how to use the tools
+	effectively.</p>
+      </li>
+      <li>
+	<p>You can stay current with the latest versions of all of the
+	SureLogic tools by checking for updates from Eclipse. If you
+	have not configured Eclipse to periodically check for updates,
+	you can check for tool updates by selecting 'Help | Check For
+	Updates' in Eclipse 3.5, 'Help | Software Updates&hellip;" in
+	Eclipse 3.4, and 'Help | Software Updates | Find and
+	Install&hellip;" in Eclipse 3.3.  This will check the
+	SureLogic update site at <a
+	href="http://surelogic.com/static/eclipse">http://surelogic.com/static/eclipse</a>
+	for any updates, regardless of whether you installed the tools
+	from the archive site or from the remote site.</p>
+      </li>
+    </ol>
+
+    <p><img src="http://www.w3.org/Icons/valid-xhtml10-blue" alt="Valid XHTML 1.0 Strict" height="31" width="88" /></p>
+  </body>
+</html>

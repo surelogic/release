@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project default="deploy">
+
+	<target name="deploy" depends="cleanup,deploy-docs,deploy-server" />
+
+	<target name="deploy-no-docs" depends="cleanup-server,deploy-server" />
+
+	<target name="redeploy-no-docs" depends="redeploy-server" />
+
+	<target name="redeploy-no-docs-firefox" depends="redeploy-server-firefox" />
+
+	<target name="deploy-docs">
+		<ant antfile="build.xml" dir="../surelogic-docs" target="build-and-install" />
+	</target>
+	<target name="deploy-server">
+		<ant antfile="deploy-to-jetty-java-5.xml" dir="../sierra-jetty" inheritAll="false" />
+		<ant antfile="team-server-deploy.xml" dir="../sierra-team-server-client-eclipse" inheritAll="false" />
+	</target>
+	<target name="redeploy-server">
+		<ant antfile="deploy-to-jetty-java-5.xml" dir="../sierra-jetty" inheritAll="false" />
+		<ant antfile="team-server-deploy.xml" dir="../sierra-team-server-client-eclipse" target="redeploy" inheritAll="false" />
+	</target>
+	<target name="redeploy-server-firefox">
+		<ant antfile="deploy-to-jetty-java-5-firefox.xml" dir="../sierra-jetty" />
+		<ant antfile="team-server-deploy.xml" dir="../sierra-team-server-client-eclipse" target="redeploy" inheritAll="false" />
+	</target>
+
+	<target name="cleanup" depends="cleanup-docs,cleanup-server" />
+	<target name="cleanup-docs">
+		<ant antfile="build.xml" dir="../surelogic-docs" target="clean-and-uninstall" inheritAll="false" />
+	</target>
+	<target name="cleanup-server">
+		<ant antfile="undeploy-from-jetty.xml" dir="../sierra-jetty" inheritAll="false" />
+		<ant antfile="team-server-undeploy.xml" dir="../sierra-team-server-client-eclipse" inheritAll="false" />
+	</target>
+
+</project>

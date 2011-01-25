@@ -9,9 +9,6 @@
    <feature url="features/com.surelogic.jsure.client.eclipse_4.0.0.qualifier.jar" id="com.surelogic.jsure.client.eclipse" version="4.0.0.qualifier">
       <category name="JSure"/>
    </feature>
-   <feature url="features/com.surelogic.sierra.java5.compatibility_2.0.0.jar" id="com.surelogic.sierra.java5.compatibility" version="2.0.0">
-      <category name="Sierra"/>
-   </feature>
    <feature url="features/com.surelogic.sierra.client.eclipse_4.0.0.qualifier.jar" id="com.surelogic.sierra.client.eclipse" version="4.0.0.qualifier">
       <category name="Sierra"/>
    </feature>

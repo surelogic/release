@@ -374,12 +374,13 @@ additional information, please send an e-mail to info@surelogic.com.
    </url>
 
    <requires>
-      <import plugin="org.eclipse.ui"/>
-      <import plugin="org.eclipse.core.runtime"/>
       <import plugin="com.surelogic.common"/>
       <import plugin="com.surelogic.common.eclipse"/>
+      <import plugin="com.surelogic.sierra.client.eclipse"/>
+      <import plugin="org.eclipse.ui"/>
+      <import plugin="org.eclipse.core.runtime"/>
       <import plugin="org.apache.ant"/>
-      <import feature="com.surelogic.sierra.client.eclipse" version="4.0.0" match="greaterOrEqual"/>
+      <import feature="com.surelogic.feature.sierra" version="4.0.0" match="greaterOrEqual"/>
    </requires>
 
    <plugin

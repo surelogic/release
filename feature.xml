@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <feature
-      id="com.surelogic.jsure.client.eclipse"
+      id="com.surelogic.feature.jsure"
       label="JSure Client"
       version="4.0.0.qualifier"
       provider-name="SureLogic, Inc."
@@ -375,9 +375,10 @@ additional information, please send an e-mail to info@surelogic.com.
    </url>
 
    <requires>
-      <import plugin="org.junit"/>
       <import plugin="com.surelogic.common"/>
       <import plugin="com.surelogic.jsure.message"/>
+      <import plugin="com.surelogic.common.eclipse"/>
+      <import plugin="edu.cmu.cs.fluid"/>
       <import plugin="org.eclipse.core.resources"/>
       <import plugin="org.eclipse.ui"/>
       <import plugin="org.eclipse.jdt.core"/>
@@ -387,20 +388,18 @@ additional information, please send an e-mail to info@surelogic.com.
       <import plugin="org.eclipse.ui.ide"/>
       <import plugin="org.eclipse.core.runtime"/>
       <import plugin="org.eclipse.jdt.ui"/>
-      <import plugin="edu.cmu.cs.fluid"/>
-      <import plugin="com.surelogic.common.eclipse"/>
+      <import plugin="com.surelogic.xml.results.viewer"/>
       <import plugin="org.eclipse.jface"/>
       <import plugin="org.eclipse.ui.workbench"/>
       <import plugin="org.eclipse.ui.editors"/>
       <import plugin="org.eclipse.update.configurator"/>
       <import plugin="org.apache.ant"/>
       <import plugin="edu.cmu.cs.fluid.eclipse"/>
+      <import plugin="com.surelogic.fluid.javac"/>
       <import plugin="org.eclipse.ui.console"/>
       <import plugin="org.eclipse.ui.externaltools"/>
       <import plugin="org.eclipse.team.cvs.core"/>
       <import plugin="org.eclipse.team.core"/>
-      <import plugin="com.surelogic.xml.results.viewer"/>
-      <import plugin="com.surelogic.fluid.javac"/>
       <import plugin="org.eclipse.ltk.core.refactoring"/>
       <import plugin="org.eclipse.ltk.ui.refactoring"/>
       <import plugin="org.eclipse.compare"/>
@@ -419,8 +418,7 @@ additional information, please send an e-mail to info@surelogic.com.
          download-size="0"
          install-size="0"
          version="4.0.0.qualifier"/>
-         
-         
+
    <plugin
          id="com.surelogic.fluid.javac"
          download-size="0"

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <feature
-      id="com.surelogic.sierra.client.eclipse"
+      id="com.surelogic.feature.sierra"
       label="Sierra Client"
       version="4.0.0.qualifier"
       provider-name="SureLogic, Inc."

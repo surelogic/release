@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <feature
-      id="com.surelogic.flashlight"
+      id="com.surelogic.feature.flashlight"
       label="Flashlight Client"
       version="4.0.0.qualifier"
       provider-name="SureLogic, Inc."

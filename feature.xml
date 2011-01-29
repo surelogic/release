@@ -373,13 +373,13 @@ additional information, please send an e-mail to info@surelogic.com.
    </url>
 
    <requires>
+      <import plugin="com.surelogic.common"/>
       <import plugin="org.eclipse.core.runtime"/>
       <import plugin="org.eclipse.jface"/>
       <import plugin="org.eclipse.ui"/>
       <import plugin="org.eclipse.ui.views"/>
       <import plugin="org.eclipse.ui.workbench"/>
       <import plugin="org.eclipse.jdt.ui"/>
-      <import plugin="com.surelogic.common"/>
       <import plugin="org.eclipse.core.resources"/>
       <import plugin="org.eclipse.jdt.core"/>
       <import plugin="org.eclipse.ui.ide"/>
@@ -387,16 +387,14 @@ additional information, please send an e-mail to info@surelogic.com.
       <import plugin="org.eclipse.update.configurator"/>
       <import plugin="org.apache.ant"/>
       <import plugin="org.eclipse.jface.text"/>
+      <import plugin="com.surelogic.common.eclipse"/>
+      <import plugin="com.surelogic.flashlight.common"/>
       <import plugin="org.eclipse.debug.core"/>
       <import plugin="org.eclipse.debug.ui"/>
       <import plugin="org.eclipse.jdt.launching"/>
       <import plugin="org.eclipse.jdt.debug.ui"/>
       <import plugin="org.eclipse.ui.externaltools"/>
       <import plugin="org.eclipse.jdt.junit"/>
-      <import plugin="com.surelogic.common.eclipse"/>
-      <import plugin="com.surelogic.adhoc.eclipse"/>
-      <import plugin="com.surelogic.flashlight.common"/>
-      <import plugin="com.surelogic.common.adhoc"/>
       <import plugin="org.eclipse.ltk.core.refactoring"/>
       <import plugin="org.eclipse.ltk.ui.refactoring"/>
    </requires>
@@ -423,21 +421,7 @@ additional information, please send an e-mail to info@surelogic.com.
          unpack="false"/>
 
    <plugin
-         id="com.surelogic.adhoc.eclipse"
-         download-size="0"
-         install-size="0"
-         version="4.0.0.qualifier"
-         unpack="false"/>
-
-   <plugin
          id="com.surelogic.flashlight.common"
-         download-size="0"
-         install-size="0"
-         version="4.0.0.qualifier"
-         unpack="false"/>
-
-   <plugin
-         id="com.surelogic.common.adhoc"
          download-size="0"
          install-size="0"
          version="4.0.0.qualifier"

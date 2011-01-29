@@ -373,6 +373,12 @@ additional information, please send an e-mail to info@surelogic.com.
    </url>
 
    <requires>
+      <import plugin="com.surelogic.common"/>
+      <import plugin="com.surelogic.common.eclipse"/>
+      <import plugin="com.surelogic.sierra.message"/>
+      <import plugin="com.surelogic.sierra.tool"/>
+      <import plugin="com.surelogic.sierra.jdbc"/>
+      <import plugin="com.surelogic.jsure.message"/>
       <import plugin="org.eclipse.ui"/>
       <import plugin="org.eclipse.ui.console"/>
       <import plugin="org.eclipse.ui.ide"/>
@@ -381,20 +387,12 @@ additional information, please send an e-mail to info@surelogic.com.
       <import plugin="org.eclipse.jdt"/>
       <import plugin="org.eclipse.jdt.core"/>
       <import plugin="org.eclipse.jdt.ui"/>
-      <import plugin="com.surelogic.sierra.tool"/>
-      <import plugin="com.surelogic.sierra.jdbc"/>
-      <import plugin="com.surelogic.common.eclipse"/>
-      <import plugin="com.surelogic.common"/>
       <import plugin="org.eclipse.jdt.launching"/>
       <import plugin="org.apache.ant"/>
       <import plugin="org.eclipse.ui.browser"/>
       <import plugin="org.eclipse.ui.editors"/>
       <import plugin="org.eclipse.jface.text"/>
-      <import plugin="com.surelogic.sierra.message"/>
       <import plugin="org.eclipse.ui.workbench.texteditor"/>
-      <import plugin="com.surelogic.adhoc.eclipse"/>
-      <import plugin="com.surelogic.jsure.message"/>
-      <import plugin="com.surelogic.common.adhoc"/>
       <import plugin="org.eclipse.jface"/>
       <import plugin="org.eclipse.ui.views"/>
       <import plugin="org.eclipse.ui.workbench"/>
@@ -414,13 +412,6 @@ additional information, please send an e-mail to info@surelogic.com.
          download-size="0"
          install-size="0"
          version="4.0.0.qualifier"/>
-
-   <plugin
-         id="com.surelogic.common.adhoc"
-         download-size="0"
-         install-size="0"
-         version="4.0.0.qualifier"
-         unpack="false"/>
 
    <plugin
          id="com.surelogic.common.eclipse"
@@ -467,13 +458,6 @@ additional information, please send an e-mail to info@surelogic.com.
          download-size="0"
          install-size="0"
          version="4.0.0.qualifier"/>
-
-   <plugin
-         id="com.surelogic.adhoc.eclipse"
-         download-size="0"
-         install-size="0"
-         version="4.0.0.qualifier"
-         unpack="false"/>
 
    <plugin
          id="com.surelogic.jsure.message"

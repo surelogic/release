@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feature
+      id="com.surelogic.feature.jsure.tests"
+      label="Tests Feature"
+      version="1.0.0"
+      provider-name="SureLogic, Inc.">
+
+   <description url="http://www.example.com/description">
+      [Enter Feature Description here.]
+   </description>
+
+   <copyright url="http://www.example.com/copyright">
+      [Enter Copyright Description here.]
+   </copyright>
+
+   <license url="http://www.example.com/license">
+      [Enter License Description here.]
+   </license>
+
+   <requires>
+      <import plugin="org.junit"/>
+      <import plugin="org.eclipse.core.runtime"/>
+      <import plugin="edu.cmu.cs.fluid"/>
+      <import plugin="edu.cmu.cs.fluid.eclipse"/>
+      <import plugin="org.eclipse.core.resources"/>
+      <import plugin="com.surelogic.xml.results.viewer"/>
+   </requires>
+
+   <plugin
+         id="com.surelogic.jsure.tests"
+         download-size="0"
+         install-size="0"
+         version="1.0.0"/>
+
+</feature>

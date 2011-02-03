@@ -377,7 +377,6 @@ additional information, please send an e-mail to info@surelogic.com.
    <requires>
       <import plugin="com.surelogic.common"/>
       <import plugin="com.surelogic.jsure.message"/>
-      <import plugin="com.surelogic.common.eclipse"/>
       <import plugin="edu.cmu.cs.fluid"/>
       <import plugin="org.eclipse.core.resources"/>
       <import plugin="org.eclipse.ui"/>
@@ -389,15 +388,13 @@ additional information, please send an e-mail to info@surelogic.com.
       <import plugin="org.eclipse.core.runtime"/>
       <import plugin="org.eclipse.jdt.ui"/>
       <import plugin="com.surelogic.xml.results.viewer"/>
-      <import plugin="org.eclipse.jface"/>
-      <import plugin="org.eclipse.ui.workbench"/>
-      <import plugin="org.eclipse.ui.editors"/>
-      <import plugin="org.eclipse.update.configurator"/>
-      <import plugin="org.apache.ant"/>
       <import plugin="edu.cmu.cs.fluid.eclipse"/>
       <import plugin="com.surelogic.fluid.javac"/>
+      <import plugin="org.eclipse.jface"/>
       <import plugin="org.eclipse.ui.console"/>
+      <import plugin="org.eclipse.ui.editors"/>
       <import plugin="org.eclipse.ui.externaltools"/>
+      <import plugin="org.eclipse.ui.workbench"/>
       <import plugin="org.eclipse.team.cvs.core"/>
       <import plugin="org.eclipse.team.core"/>
       <import plugin="org.eclipse.ltk.core.refactoring"/>
@@ -441,13 +438,6 @@ additional information, please send an e-mail to info@surelogic.com.
          unpack="false"/>
 
    <plugin
-         id="com.surelogic.common.eclipse"
-         download-size="0"
-         install-size="0"
-         version="4.0.0.qualifier"
-         unpack="false"/>
-
-   <plugin
          id="com.surelogic.jsure.client.eclipse"
          download-size="0"
          install-size="0"
@@ -472,5 +462,19 @@ additional information, please send an e-mail to info@surelogic.com.
          download-size="0"
          install-size="0"
          version="4.0.0.qualifier"/>
+
+   <plugin
+         id="com.surelogic.common.core"
+         download-size="0"
+         install-size="0"
+         version="4.0.0.qualifier"
+         unpack="false"/>
+
+   <plugin
+         id="com.surelogic.common.ui"
+         download-size="0"
+         install-size="0"
+         version="4.0.0.qualifier"
+         unpack="false"/>
 
 </feature>

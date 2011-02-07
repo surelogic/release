@@ -374,10 +374,11 @@ additional information, please send an e-mail to info@surelogic.com.
 
    <requires>
       <import plugin="com.surelogic.common"/>
+      <import plugin="com.surelogic.common.core"/>
+      <import plugin="com.surelogic.common.ui"/>
       <import plugin="com.surelogic.sierra.message"/>
       <import plugin="com.surelogic.sierra.tool"/>
       <import plugin="com.surelogic.sierra.jdbc"/>
-      <import plugin="com.surelogic.jsure.message"/>
       <import plugin="org.eclipse.ui"/>
       <import plugin="org.eclipse.ui.console"/>
       <import plugin="org.eclipse.ui.ide"/>
@@ -394,8 +395,6 @@ additional information, please send an e-mail to info@surelogic.com.
       <import plugin="org.eclipse.ui.workbench.texteditor"/>
       <import plugin="org.eclipse.help"/>
       <import plugin="org.eclipse.ui.views"/>
-      <import plugin="com.surelogic.common.core"/>
-      <import plugin="com.surelogic.common.ui"/>
    </requires>
 
    <plugin
@@ -449,13 +448,6 @@ additional information, please send an e-mail to info@surelogic.com.
          download-size="0"
          install-size="0"
          version="4.0.0.qualifier"/>
-
-   <plugin
-         id="com.surelogic.jsure.message"
-         download-size="0"
-         install-size="0"
-         version="4.0.0.qualifier"
-         unpack="false"/>
 
    <plugin
          id="com.surelogic.common.core"

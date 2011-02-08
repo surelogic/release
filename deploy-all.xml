@@ -7,21 +7,15 @@
 
 	<target name="redeploy-no-docs" depends="redeploy-server" />
 
-	<target name="redeploy-no-docs-firefox" depends="redeploy-server-firefox" />
-
 	<target name="deploy-docs">
 		<ant antfile="build.xml" dir="../surelogic-docs" target="build-and-install" />
 	</target>
 	<target name="deploy-server">
-		<ant antfile="deploy-to-jetty-java-5.xml" dir="../sierra-jetty" inheritAll="false" />
+		<ant antfile="deploy-to-jetty-java-6.xml" dir="../sierra-jetty" inheritAll="false" />
 		<ant antfile="team-server-deploy.xml" dir="../sierra-team-server-client-eclipse" inheritAll="false" />
 	</target>
 	<target name="redeploy-server">
-		<ant antfile="deploy-to-jetty-java-5.xml" dir="../sierra-jetty" inheritAll="false" />
-		<ant antfile="team-server-deploy.xml" dir="../sierra-team-server-client-eclipse" target="redeploy" inheritAll="false" />
-	</target>
-	<target name="redeploy-server-firefox">
-		<ant antfile="deploy-to-jetty-java-5-firefox.xml" dir="../sierra-jetty" />
+		<ant antfile="deploy-to-jetty-java-6.xml" dir="../sierra-jetty" inheritAll="false" />
 		<ant antfile="team-server-deploy.xml" dir="../sierra-team-server-client-eclipse" target="redeploy" inheritAll="false" />
 	</target>
 

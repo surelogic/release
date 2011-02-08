@@ -4,7 +4,7 @@
       label="Flashlight Client"
       version="4.0.0.qualifier"
       provider-name="SureLogic, Inc."
-      plugin="com.surelogic.flashlight">
+      plugin="com.surelogic.flashlight.client.eclipse">
 
    <description url="http://www.surelogic.com">
       Flashlight analyzes Java applications as they run and provides developers with insight into the concurrency within their code.
@@ -397,7 +397,7 @@ additional information, please send an e-mail to info@surelogic.com.
    </requires>
 
    <plugin
-         id="com.surelogic.flashlight"
+         id="com.surelogic.flashlight.client.eclipse"
          download-size="0"
          install-size="0"
          version="4.0.0.qualifier"

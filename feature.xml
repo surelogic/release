@@ -39,8 +39,7 @@
          id="com.surelogic.common"
          download-size="0"
          install-size="0"
-         version="4.0.0.qualifier"
-         unpack="false"/>
+         version="4.0.0.qualifier"/>
 
    <plugin
          id="com.surelogic.common.core"

@@ -376,8 +376,10 @@ additional information, please send an e-mail to info@surelogic.com.
 
    <requires>
       <import plugin="com.surelogic.common"/>
+      <import plugin="com.surelogic.common.core"/>
+      <import plugin="com.surelogic.common.ui"/>
       <import plugin="edu.cmu.cs.fluid"/>
-      <import plugin="com.surelogic.fluid.javac"/>
+      <import plugin="com.surelogic.jsure.core"/>
       <import plugin="org.eclipse.ui"/>
       <import plugin="org.eclipse.core.runtime"/>
       <import plugin="org.eclipse.core.resources"/>
@@ -399,19 +401,12 @@ additional information, please send an e-mail to info@surelogic.com.
       <import plugin="org.eclipse.compare"/>
       <import plugin="org.eclipse.jdt.launching"/>
       <import plugin="org.eclipse.debug.core"/>
-      <import plugin="com.surelogic.common.core"/>
-      <import plugin="com.surelogic.common.ui"/>
-      <import plugin="com.surelogic.jsure.core"/>
+      <import plugin="org.eclipse.debug.ui"/>
+      <import plugin="org.eclipse.core.filesystem"/>
    </requires>
 
    <plugin
          id="edu.cmu.cs.fluid"
-         download-size="0"
-         install-size="0"
-         version="4.0.0.qualifier"/>
-
-   <plugin
-         id="com.surelogic.fluid.javac"
          download-size="0"
          install-size="0"
          version="4.0.0.qualifier"/>

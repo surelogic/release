@@ -74,10 +74,20 @@
     WebSphere Software (RAD) 8.0 is supported.</p>
     
     <p><strong><em>Before you begin:</em></strong> We recommend that you
-    allow at least 1024 MB of heap space and 128 MB of PermGen space for
-    your Eclipse JVM.  You can change these settings my modifying the
-    <tt>-Xmx</tt> and <tt>-XX:MaxPermSize</tt> arguments in your
-    <em>eclipse.ini</em> file.</p>
+    allow 1024 MB of heap space for your Eclipse JVM.  You can change this setting by modifying the
+    <tt>-Xmx</tt> arguments in your
+    <em>eclipse.ini</em> file located in your Eclipse installation directory. For example,
+    under Eclipse 3.7 under Windows, you would change the last few lines of the <em>eclipse.ini</em> file from</p>
+    
+    <pre>-vmargs
+-Xms40m
+-Xmx384m</pre>
+
+	<p>to</p>
+	
+	<pre>-vmargs
+-Xms40m
+-Xmx1024m</pre>
     
     <ol>
       <li>

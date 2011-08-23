@@ -2,7 +2,7 @@
 <feature
       id="com.surelogic.feature.flashlight"
       label="Flashlight Client"
-      version="4.0.0.qualifier"
+      version="4.0.1.qualifier"
       provider-name="SureLogic, Inc."
       plugin="com.surelogic.flashlight.client.eclipse">
 
@@ -374,6 +374,8 @@ additional information, please send an e-mail to info@surelogic.com.
 
    <requires>
       <import plugin="com.surelogic.common"/>
+      <import plugin="com.surelogic.common.core"/>
+      <import plugin="com.surelogic.common.ui"/>
       <import plugin="com.surelogic.flashlight.common"/>
       <import plugin="org.eclipse.ui"/>
       <import plugin="org.eclipse.core.runtime"/>
@@ -392,48 +394,47 @@ additional information, please send an e-mail to info@surelogic.com.
       <import plugin="org.eclipse.ltk.core.refactoring"/>
       <import plugin="org.eclipse.ltk.ui.refactoring"/>
       <import plugin="org.eclipse.ui.views"/>
-      <import plugin="com.surelogic.common.core"/>
-      <import plugin="com.surelogic.common.ui"/>
+      <import plugin="org.eclipse.core.filesystem"/>
    </requires>
 
    <plugin
          id="com.surelogic.flashlight.client.eclipse"
          download-size="0"
          install-size="0"
-         version="4.0.0.qualifier"
+         version="4.0.1.qualifier"
          unpack="false"/>
 
    <plugin
          id="com.surelogic.common"
          download-size="0"
          install-size="0"
-         version="4.0.0.qualifier"/>
+         version="4.0.1.qualifier"/>
 
    <plugin
          id="com.surelogic.flashlight.common"
          download-size="0"
          install-size="0"
-         version="4.0.0.qualifier"
+         version="4.0.1.qualifier"
          unpack="false"/>
 
    <plugin
          id="com.surelogic.flashlight.client.help"
          download-size="0"
          install-size="0"
-         version="4.0.0.qualifier"/>
+         version="4.0.1.qualifier"/>
 
    <plugin
          id="com.surelogic.common.core"
          download-size="0"
          install-size="0"
-         version="4.0.0.qualifier"
+         version="4.0.1.qualifier"
          unpack="false"/>
 
    <plugin
          id="com.surelogic.common.ui"
          download-size="0"
          install-size="0"
-         version="4.0.0.qualifier"
+         version="4.0.1.qualifier"
          unpack="false"/>
 
 </feature>

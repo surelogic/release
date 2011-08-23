@@ -2,7 +2,7 @@
 <feature
       id="com.surelogic.feature.sierra"
       label="Sierra Client"
-      version="4.0.0.qualifier"
+      version="4.0.1.qualifier"
       provider-name="SureLogic, Inc."
       plugin="com.surelogic.sierra.client.eclipse">
 
@@ -395,39 +395,41 @@ additional information, please send an e-mail to info@surelogic.com.
       <import plugin="org.eclipse.ui.workbench.texteditor"/>
       <import plugin="org.eclipse.help"/>
       <import plugin="org.eclipse.ui.views"/>
+      <import plugin="org.eclipse.core.filesystem"/>
+      <import plugin="org.eclipse.debug.ui"/>
    </requires>
 
    <plugin
          id="com.surelogic.sierra.client.eclipse"
          download-size="0"
          install-size="0"
-         version="4.0.0.qualifier"
+         version="4.0.1.qualifier"
          unpack="false"/>
 
    <plugin
          id="com.surelogic.sierra.tool"
          download-size="0"
          install-size="0"
-         version="4.0.0.qualifier"/>
+         version="4.0.1.qualifier"/>
 
    <plugin
          id="com.surelogic.sierra.jdbc"
          download-size="0"
          install-size="0"
-         version="4.0.0.qualifier"
+         version="4.0.1.qualifier"
          unpack="false"/>
 
    <plugin
          id="com.surelogic.common"
          download-size="0"
          install-size="0"
-         version="4.0.0.qualifier"/>
+         version="4.0.1.qualifier"/>
 
    <plugin
          id="com.surelogic.sierra.message"
          download-size="0"
          install-size="0"
-         version="4.0.0.qualifier"
+         version="4.0.1.qualifier"
          unpack="false"/>
 
    <plugin
@@ -446,20 +448,20 @@ additional information, please send an e-mail to info@surelogic.com.
          id="com.surelogic.sierra.client.eclipse.help"
          download-size="0"
          install-size="0"
-         version="4.0.0.qualifier"/>
+         version="4.0.1.qualifier"/>
 
    <plugin
          id="com.surelogic.common.core"
          download-size="0"
          install-size="0"
-         version="4.0.0.qualifier"
+         version="4.0.1.qualifier"
          unpack="false"/>
 
    <plugin
          id="com.surelogic.common.ui"
          download-size="0"
          install-size="0"
-         version="4.0.0.qualifier"
+         version="4.0.1.qualifier"
          unpack="false"/>
 
 </feature>

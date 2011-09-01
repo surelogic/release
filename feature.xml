@@ -16,7 +16,7 @@
    <license url="http://www.surelogic.com/license/eula.html">
       The EULA can be found at http://www.surelogic.com/license/eula.html
    </license>
-   
+
    <url>
       <update label="SureLogic" url="http://www.surelogic.com/static/eclipse/"/>
    </url>
@@ -45,26 +45,26 @@
          id="com.surelogic.common"
          download-size="0"
          install-size="0"
-         version="4.0.1.qualifier"/>
+         version="4.1.0.qualifier"/>
 
    <plugin
          id="com.surelogic.common.core"
          download-size="0"
          install-size="0"
-         version="4.0.1.qualifier"
+         version="4.1.0.qualifier"
          unpack="false"/>
 
    <plugin
          id="edu.cmu.cs.fluid"
          download-size="0"
          install-size="0"
-         version="4.0.1.qualifier"/>
+         version="4.1.0.qualifier"/>
 
    <plugin
          id="com.surelogic.jsure.core"
          download-size="0"
          install-size="0"
-         version="4.0.1.qualifier"
+         version="4.1.0.qualifier"
          unpack="false"/>
 
 </feature>

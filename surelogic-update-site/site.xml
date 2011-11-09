@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<site>
+   <description url="http://surelogic.com/static/eclipse">
+      Releases of Eclipse-based tools from SureLogic, Inc.
+   </description>
+   <feature url="features/com.surelogic.feature.flashlight_4.0.2.qualifier.jar" id="com.surelogic.feature.flashlight" version="4.0.2.qualifier">
+      <category name="Flashlight"/>
+   </feature>
+   <feature url="features/com.surelogic.feature.jsure_4.0.2.qualifier.jar" id="com.surelogic.feature.jsure" version="4.0.2.qualifier">
+      <category name="JSure"/>
+   </feature>
+   <feature url="features/com.surelogic.feature.sierra_4.0.2.qualifier.jar" id="com.surelogic.feature.sierra" version="4.0.2.qualifier">
+      <category name="Sierra"/>
+   </feature>
+   <feature url="features/com.surelogic.feature.sierra.teamserver_4.0.2.qualifier.jar" id="com.surelogic.feature.sierra.teamserver" version="4.0.2.qualifier">
+      <category name="Sierra"/>
+   </feature>
+   <category-def name="Flashlight" label="Flashlight">
+      <description>
+         Flashlight is a dynamic analysis tool that supports postmortem concurrency analysis.
+      </description>
+   </category-def>
+   <category-def name="JSure" label="JSure">
+      <description>
+         JSure is an analysis-based verification tool.
+      </description>
+   </category-def>
+   <category-def name="Sierra" label="Sierra">
+      <description>
+         Sierra is a rules-based static analysis toolkit supporting team collaboration.
+      </description>
+   </category-def>
+</site>

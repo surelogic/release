@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feature
+      id="com.surelogic.feature.sierra"
+      label="Sierra Client"
+      version="4.0.2.qualifier"
+      provider-name="SureLogic, Inc."
+      plugin="com.surelogic.sierra.client.eclipse">
+
+   <description url="http://www.surelogic.com">
+      Install this feature to use SureLogic Sierra within Eclipse.
+   </description>
+
+   <copyright url="http://www.surelogic.com">
+      Copyright (c) 2011 SureLogic, Inc. All rights reserved.
+   </copyright>
+
+   <license url="http://www.surelogic.com/license/eula.html">
+      The EULA can be found at http://www.surelogic.com/license/eula.html
+   </license>
+
+   <url>
+      <update label="SureLogic" url="http://www.surelogic.com/static/eclipse/"/>
+   </url>
+
+   <requires>
+      <import plugin="com.surelogic.common"/>
+      <import plugin="com.surelogic.common.core"/>
+      <import plugin="com.surelogic.common.ui"/>
+      <import plugin="com.surelogic.sierra.message"/>
+      <import plugin="com.surelogic.sierra.tool"/>
+      <import plugin="com.surelogic.sierra.jdbc"/>
+      <import plugin="org.eclipse.ui"/>
+      <import plugin="org.eclipse.ui.console"/>
+      <import plugin="org.eclipse.ui.ide"/>
+      <import plugin="org.eclipse.core.runtime"/>
+      <import plugin="org.eclipse.core.resources"/>
+      <import plugin="org.eclipse.jdt"/>
+      <import plugin="org.eclipse.jdt.core"/>
+      <import plugin="org.eclipse.jdt.ui"/>
+      <import plugin="org.eclipse.jdt.launching"/>
+      <import plugin="org.apache.ant"/>
+      <import plugin="org.eclipse.ui.browser"/>
+      <import plugin="org.eclipse.ui.editors"/>
+      <import plugin="org.eclipse.jface.text"/>
+      <import plugin="org.eclipse.ui.workbench.texteditor"/>
+      <import plugin="org.eclipse.help"/>
+      <import plugin="org.eclipse.ui.views"/>
+      <import plugin="org.eclipse.core.filesystem"/>
+      <import plugin="org.eclipse.debug.ui"/>
+   </requires>
+
+   <plugin
+         id="com.surelogic.sierra.client.eclipse"
+         download-size="0"
+         install-size="0"
+         version="4.0.2.qualifier"
+         unpack="false"/>
+
+   <plugin
+         id="com.surelogic.sierra.tool"
+         download-size="0"
+         install-size="0"
+         version="4.0.2.qualifier"/>
+
+   <plugin
+         id="com.surelogic.sierra.jdbc"
+         download-size="0"
+         install-size="0"
+         version="4.0.2.qualifier"
+         unpack="false"/>
+
+   <plugin
+         id="com.surelogic.common"
+         download-size="0"
+         install-size="0"
+         version="4.0.2.qualifier"/>
+
+   <plugin
+         id="com.surelogic.sierra.message"
+         download-size="0"
+         install-size="0"
+         version="4.0.2.qualifier"
+         unpack="false"/>
+
+   <plugin
+         id="com.surelogic.sierra.fb"
+         download-size="0"
+         install-size="0"
+         version="1.3.9.qualifier"/>
+
+   <plugin
+         id="com.surelogic.sierra.pmd"
+         download-size="0"
+         install-size="0"
+         version="4.2.5.qualifier"/>
+
+   <plugin
+         id="com.surelogic.sierra.client.eclipse.help"
+         download-size="0"
+         install-size="0"
+         version="4.0.2.qualifier"/>
+
+   <plugin
+         id="com.surelogic.common.core"
+         download-size="0"
+         install-size="0"
+         version="4.0.2.qualifier"
+         unpack="false"/>
+
+   <plugin
+         id="com.surelogic.common.ui"
+         download-size="0"
+         install-size="0"
+         version="4.0.2.qualifier"
+         unpack="false"/>
+
+</feature>

@@ -8,24 +8,24 @@
 	<target name="redeploy-no-docs" depends="redeploy-server" />
 
 	<target name="deploy-docs">
-		<ant antfile="build.xml" dir="../surelogic-docs" target="build-and-install" />
+		<ant antfile="build.xml" dir="../../documentation/surelogic-docs" target="build-and-install" />
 	</target>
 	<target name="deploy-server">
-		<ant antfile="deploy-to-jetty-java-6.xml" dir="../sierra-jetty" inheritAll="false" />
-		<ant antfile="team-server-deploy.xml" dir="../sierra-team-server-client-eclipse" inheritAll="false" />
+		<ant antfile="deploy-to-jetty-java-6.xml" dir="../../sierra/sierra-jetty" inheritAll="false" />
+		<ant antfile="team-server-deploy.xml" dir="../../sierra/sierra-team-server-client-eclipse" inheritAll="false" />
 	</target>
 	<target name="redeploy-server">
-		<ant antfile="deploy-to-jetty-java-6.xml" dir="../sierra-jetty" inheritAll="false" />
-		<ant antfile="team-server-deploy.xml" dir="../sierra-team-server-client-eclipse" target="redeploy" inheritAll="false" />
+		<ant antfile="deploy-to-jetty-java-6.xml" dir="../../sierra/sierra-jetty" inheritAll="false" />
+		<ant antfile="team-server-deploy.xml" dir="../../sierra/sierra-team-server-client-eclipse" target="redeploy" inheritAll="false" />
 	</target>
 
 	<target name="cleanup" depends="cleanup-docs,cleanup-server" />
 	<target name="cleanup-docs">
-		<ant antfile="build.xml" dir="../surelogic-docs" target="clean-and-uninstall" inheritAll="false" />
+		<ant antfile="build.xml" dir="../../documentation/surelogic-docs" target="clean-and-uninstall" inheritAll="false" />
 	</target>
 	<target name="cleanup-server">
-		<ant antfile="undeploy-from-jetty.xml" dir="../sierra-jetty" inheritAll="false" />
-		<ant antfile="team-server-undeploy.xml" dir="../sierra-team-server-client-eclipse" inheritAll="false" />
+		<ant antfile="undeploy-from-jetty.xml" dir="../../sierra/sierra-jetty" inheritAll="false" />
+		<ant antfile="team-server-undeploy.xml" dir="../../sierra/sierra-team-server-client-eclipse" inheritAll="false" />
 	</target>
 
 </project>

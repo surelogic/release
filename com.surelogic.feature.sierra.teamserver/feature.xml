@@ -2,7 +2,7 @@
 <feature
       id="com.surelogic.feature.sierra.teamserver"
       label="Sierra Local Team Server (Optional)"
-      version="4.1.0.qualifier"
+      version="4.1.1.qualifier"
       provider-name="SureLogic, Inc."
       plugin="com.surelogic.sierra.eclipse.teamserver">
 
@@ -38,6 +38,6 @@ within Eclipse.
          id="com.surelogic.sierra.eclipse.teamserver"
          download-size="0"
          install-size="0"
-         version="4.1.0.qualifier"/>
+         version="4.1.1.qualifier"/>
 
 </feature>

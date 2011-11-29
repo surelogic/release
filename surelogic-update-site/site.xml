@@ -3,16 +3,16 @@
    <description url="http://surelogic.com/static/eclipse">
       Releases of Eclipse-based tools from SureLogic, Inc.
    </description>
-   <feature url="features/com.surelogic.feature.flashlight_4.1.0.qualifier.jar" id="com.surelogic.feature.flashlight" version="4.1.0.qualifier">
+   <feature url="features/com.surelogic.feature.flashlight_4.1.1.qualifier.jar" id="com.surelogic.feature.flashlight" version="4.1.1.qualifier">
       <category name="Flashlight"/>
    </feature>
-   <feature url="features/com.surelogic.feature.jsure_4.1.0.qualifier.jar" id="com.surelogic.feature.jsure" version="4.1.0.qualifier">
+   <feature url="features/com.surelogic.feature.jsure_4.1.1.qualifier.jar" id="com.surelogic.feature.jsure" version="4.1.1.qualifier">
       <category name="JSure"/>
    </feature>
-   <feature url="features/com.surelogic.feature.sierra_4.1.0.qualifier.jar" id="com.surelogic.feature.sierra" version="4.1.0.qualifier">
+   <feature url="features/com.surelogic.feature.sierra_4.1.1.qualifier.jar" id="com.surelogic.feature.sierra" version="4.1.1.qualifier">
       <category name="Sierra"/>
    </feature>
-   <feature url="features/com.surelogic.feature.sierra.teamserver_4.1.0.qualifier.jar" id="com.surelogic.feature.sierra.teamserver" version="4.1.0.qualifier">
+   <feature url="features/com.surelogic.feature.sierra.teamserver_4.1.1.qualifier.jar" id="com.surelogic.feature.sierra.teamserver" version="4.1.1.qualifier">
       <category name="Sierra"/>
    </feature>
    <category-def name="Flashlight" label="Flashlight">

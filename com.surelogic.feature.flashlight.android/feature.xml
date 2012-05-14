@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feature
+      id="com.surelogic.feature.flashlight.android"
+      label="Flashlight Client Android Support"
+      version="4.2.1.qualifier"
+      provider-name="SureLogic, Inc."
+      plugin="com.surelogic.flashlight.client.eclipse">
+
+   <description url="http://www.surelogic.com">
+      Install this feature to enable Android support in Flashlight.
+   </description>
+
+   <copyright url="http://www.surelogic.com">
+      Copyright (c) 2012 SureLogic, Inc. All rights reserved.
+   </copyright>
+
+   <license url="http://www.surelogic.com/license/eula.html">
+      The EULA can be found at http://www.surelogic.com/license/eula.html
+   </license>
+
+   <url>
+      <update label="SureLogic" url="http://www.surelogic.com/static/eclipse/"/>
+   </url>
+
+   <requires>
+      <import plugin="org.eclipse.ui"/>
+      <import plugin="org.eclipse.core.runtime"/>
+      <import plugin="com.android.ide.eclipse.adt" version="17.0.0" match="greaterOrEqual"/>
+      <import plugin="com.surelogic.common"/>
+      <import plugin="com.surelogic.common.core"/>
+      <import plugin="com.surelogic.common.ui"/>
+      <import plugin="org.eclipse.debug.core"/>
+      <import plugin="org.eclipse.debug.ui"/>
+      <import plugin="org.eclipse.jdt.launching"/>
+      <import plugin="org.eclipse.core.resources"/>
+      <import plugin="org.eclipse.jdt.debug.ui"/>
+      <import plugin="org.eclipse.ui.externaltools"/>
+      <import plugin="org.eclipse.jdt.junit"/>
+      <import plugin="org.eclipse.jdt.ui"/>
+      <import plugin="org.eclipse.ui.ide"/>
+      <import plugin="org.eclipse.ui.editors"/>
+      <import plugin="org.eclipse.jdt.core"/>
+      <import plugin="org.eclipse.jface.text"/>
+      <import plugin="com.android.ide.eclipse.ddms"/>
+      <import plugin="com.android.ide.eclipse.hierarchyviewer"/>
+      <import plugin="com.android.ide.eclipse.traceview"/>
+      <import plugin="com.surelogic.flashlight.client.eclipse" version="4.2.1" match="greaterOrEqual"/>
+      <import plugin="com.surelogic.flashlight.common" version="4.2.1" match="greaterOrEqual"/>
+   </requires>
+
+   <plugin
+         id="com.surelogic.flashlight.android"
+         download-size="0"
+         install-size="0"
+         version="4.2.1.qualifier"/>
+
+</feature>

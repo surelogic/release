@@ -15,6 +15,9 @@
    <feature url="features/com.surelogic.feature.sierra.teamserver_4.2.1.qualifier.jar" id="com.surelogic.feature.sierra.teamserver" version="4.2.1.qualifier">
       <category name="Sierra"/>
    </feature>
+   <feature url="features/com.surelogic.feature.flashlight.android_4.2.1.qualifier.jar" id="com.surelogic.feature.flashlight.android" version="4.2.1.qualifier">
+      <category name="Flashlight"/>
+   </feature>
    <category-def name="Flashlight" label="Flashlight">
       <description>
          Flashlight is a dynamic analysis tool that supports postmortem concurrency analysis.

@@ -7,12 +7,11 @@
       plugin="com.surelogic.sierra.eclipse.teamserver">
 
    <description url="http://www.surelogic.com">
-      Install this feature to run and control a Sierra Team Server
-within Eclipse.
+      Install this feature to run and control a Sierra Team Server within Eclipse.
    </description>
 
    <copyright url="http://www.surelogic.com">
-      Copyright (c) 2011 SureLogic, Inc. All rights reserved.
+      Copyright (c) 2012 SureLogic, Inc. All rights reserved.
    </copyright>
 
    <license url="http://www.surelogic.com/license/eula.html">

@@ -7,7 +7,7 @@
       plugin="com.surelogic.flashlight.client.eclipse">
 
    <description url="http://www.surelogic.com">
-      Install this feature to enable Android support in Flashlight.
+      Install this feature to use SureLogic Flashlight on Android code in Eclipse.
    </description>
 
    <copyright url="http://www.surelogic.com">

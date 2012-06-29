@@ -25,7 +25,6 @@
    <requires>
       <import plugin="org.eclipse.ui"/>
       <import plugin="org.eclipse.core.runtime"/>
-      <import plugin="com.android.ide.eclipse.adt" version="17.0.0" match="greaterOrEqual"/>
       <import plugin="com.surelogic.common"/>
       <import plugin="com.surelogic.common.core"/>
       <import plugin="com.surelogic.common.ui"/>
@@ -41,11 +40,11 @@
       <import plugin="org.eclipse.ui.editors"/>
       <import plugin="org.eclipse.jdt.core"/>
       <import plugin="org.eclipse.jface.text"/>
-      <import plugin="com.android.ide.eclipse.ddms"/>
-      <import plugin="com.android.ide.eclipse.hierarchyviewer"/>
-      <import plugin="com.android.ide.eclipse.traceview"/>
       <import plugin="com.surelogic.flashlight.client.eclipse" version="4.3.1" match="greaterOrEqual"/>
       <import plugin="com.surelogic.flashlight.common" version="4.3.1" match="greaterOrEqual"/>
+      <import plugin="com.android.ide.eclipse.adt" version="20.0.0" match="greaterOrEqual"/>
+      <import plugin="com.android.ide.eclipse.ddms" version="20.0.0" match="greaterOrEqual"/>
+      <import plugin="com.android.ide.eclipse.base" version="20.0.0" match="greaterOrEqual"/>
    </requires>
 
    <plugin

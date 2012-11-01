@@ -23,14 +23,13 @@
    </url>
 
    <requires>
-      <import plugin="com.surelogic.common"/>
-      <import plugin="com.surelogic.sierra.client.eclipse"/>
       <import plugin="org.eclipse.ui"/>
       <import plugin="org.eclipse.core.runtime"/>
       <import plugin="org.apache.ant"/>
-      <import feature="com.surelogic.feature.sierra" version="4.0.0" match="greaterOrEqual"/>
+      <import plugin="com.surelogic.common"/>
       <import plugin="com.surelogic.common.core"/>
       <import plugin="com.surelogic.common.ui"/>
+      <import plugin="com.surelogic.sierra.client.eclipse"/>
    </requires>
 
    <plugin

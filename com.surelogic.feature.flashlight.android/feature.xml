@@ -43,14 +43,14 @@
       <import plugin="com.android.ide.eclipse.base" version="20.0.0" match="greaterOrEqual"/>
       <import plugin="com.android.ide.eclipse.adt" version="20.0.0" match="greaterOrEqual"/>
       <import plugin="com.android.ide.eclipse.ddms" version="20.0.0" match="greaterOrEqual"/>
-      <import plugin="com.surelogic.flashlight.client.eclipse" version="4.3.3" match="greaterOrEqual"/>
-      <import plugin="com.surelogic.flashlight.common" version="4.3.3" match="greaterOrEqual"/>
+      <import plugin="com.surelogic.flashlight.client.eclipse"/>
+      <import plugin="com.surelogic.flashlight.common"/>
    </requires>
 
    <plugin
          id="com.surelogic.flashlight.android"
          download-size="0"
          install-size="0"
-         version="4.3.3.qualifier"/>
+         version="4.3.4.qualifier"/>
 
 </feature>

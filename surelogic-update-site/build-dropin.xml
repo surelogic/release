@@ -1,0 +1,66 @@
+<project name="surelogic-dropin-archive" default="build-dropin">	
+	<property name="fs" value="${file.separator}" />
+
+	<dirname property="antfile.dir" file="${ant.file}" />
+
+	<!-- A set of tasks we cooked up to help the JSure test run -->
+	<taskdef resource="sl-tasks.properties">
+		<classpath>
+			<pathelement location="${antfile.dir}${fs}..${fs}..${fs}jsure${fs}jsure-tests${fs}scripts${fs}lib${fs}jsure-tests-ant-tasks.jar" />
+		</classpath>
+	</taskdef>	
+
+	<macrodef name="unzip-if-match">
+		<attribute name="archive" />
+		<attribute name="prefix" />
+		<sequential>
+			<if>
+				<matches string="@{archive}" pattern="@{prefix}_(.*)\.jar$" />
+				<then>
+					<propertyRegex property="name.no.dot.jar" input="@{archive}" regexp="(.*)\.jar$" 
+						select="\1" override="true" casesensitive="false" />																		
+					<unzip dest="${name.no.dot.jar}" src="@{archive}" />
+					<delete file="@{archive}"/>
+				</then>
+			</if>
+		</sequential>
+	</macrodef>					
+	
+	<target name="init">
+		<!-- Sets the standard DSTAMP, TSTAMP, and TODAY properties -->
+		<tstamp/>
+		<echo message="date=${DSTAMP} time=${TSTAMP}"/>
+        <echo>${java.io.tmpdir}</echo>
+        <tempfile property="temp.dir" destDir="${java.io.tmpdir}" prefix="build"/>
+        <echo>temp.dir=${temp.dir}</echo>
+		<property name="dropin.root.dir" value="${temp.dir}/eclipse"/>
+		<property name="plugins.dir" value="${dropin.root.dir}/plugins"/>
+		<property name="dropin.zip" value="surelogic-tools-dropin-${DSTAMP}.zip"/>
+	</target>
+		
+	<target name="build-dropin" depends="init">
+		<mkdir dir="${dropin.root.dir}"/>
+		<copy todir="${dropin.root.dir}/features">
+			<fileset dir="features"/>
+		</copy>
+		<copy todir="${plugins.dir}">
+		    <fileset dir="plugins"/>
+		</copy>		
+		<for param="archive">
+		  	<path>
+		    	<fileset dir="${plugins.dir}" includes="*.jar"/>
+		  	</path>
+			<sequential>
+				<unzip-if-match archive="@{archive}" prefix="edu.cmu.cs.fluid" />
+				<unzip-if-match archive="@{archive}" prefix="com.surelogic.common" />
+				<unzip-if-match archive="@{archive}" prefix="com.surelogic.sierra.tool" />
+				<unzip-if-match archive="@{archive}" prefix="com.surelogic.sierra.fb" />
+				<unzip-if-match archive="@{archive}" prefix="com.surelogic.sierra.pmd" />				
+				<unzip-if-match archive="@{archive}" prefix="com.surelogic.sierra.eclipse.teamserver" />
+			</sequential>
+		</for>
+		<zip destfile="${dropin.zip}" basedir="${temp.dir}">
+		</zip>
+		<delete dir="${temp.dir}"/>
+	</target>
+</project>

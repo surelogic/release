@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <site>
-   <description url="http://surelogic.com/static/eclipse">
+   <description name="SureLogic Tools Update Site" url="http://surelogic.com/static/eclipse">
       Releases of Eclipse-based tools from SureLogic, Inc.
    </description>
-   <feature url="features/com.surelogic.feature.flashlight_4.3.3.qualifier.jar" id="com.surelogic.feature.flashlight" version="4.3.3.qualifier">
+   <feature url="features/com.surelogic.feature.flashlight_4.3.4.qualifier.jar" id="com.surelogic.feature.flashlight" version="4.3.4.qualifier">
       <category name="Flashlight"/>
    </feature>
-   <feature url="features/com.surelogic.feature.flashlight.android_4.3.3.qualifier.jar" id="com.surelogic.feature.flashlight.android" version="4.3.3.qualifier">
+   <feature url="features/com.surelogic.feature.flashlight.android_4.3.4.qualifier.jar" id="com.surelogic.feature.flashlight.android" version="4.3.4.qualifier">
       <category name="Flashlight"/>
    </feature>
-   <feature url="features/com.surelogic.feature.jsure_4.3.3.qualifier.jar" id="com.surelogic.feature.jsure" version="4.3.3.qualifier">
+   <feature url="features/com.surelogic.feature.jsure_4.3.4.qualifier.jar" id="com.surelogic.feature.jsure" version="4.3.4.qualifier">
       <category name="JSure"/>
    </feature>
-   <feature url="features/com.surelogic.feature.sierra_4.3.3.qualifier.jar" id="com.surelogic.feature.sierra" version="4.3.3.qualifier">
+   <feature url="features/com.surelogic.feature.sierra_4.3.4.qualifier.jar" id="com.surelogic.feature.sierra" version="4.3.4.qualifier">
       <category name="Sierra"/>
    </feature>
-   <feature url="features/com.surelogic.feature.sierra.teamserver_4.3.3.qualifier.jar" id="com.surelogic.feature.sierra.teamserver" version="4.3.3.qualifier">
+   <feature url="features/com.surelogic.feature.sierra.teamserver_4.3.4.qualifier.jar" id="com.surelogic.feature.sierra.teamserver" version="4.3.4.qualifier">
       <category name="Sierra"/>
    </feature>
    <category-def name="Flashlight" label="Flashlight">

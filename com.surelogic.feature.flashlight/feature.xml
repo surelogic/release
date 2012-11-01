@@ -72,7 +72,8 @@
          id="com.surelogic.flashlight.client.help"
          download-size="0"
          install-size="0"
-         version="4.3.4.qualifier"/>
+         version="4.3.4.qualifier"
+         unpack="false"/>
 
    <plugin
          id="com.surelogic.common.core"

@@ -59,6 +59,12 @@
 				<unzip-if-match archive="@{archive}" prefix="com.surelogic.sierra.eclipse.teamserver" />
 			</sequential>
 		</for>
+		<!-- Modify the version/timestamp below to match the particular build
+		
+		<copy file=".surelogic-licenses"
+			  todir="${plugins.dir}/com.surelogic.common_4.3.4.201211091659/lib">
+		</copy>
+		-->
 		<zip destfile="${dropin.zip}" basedir="${temp.dir}">
 		</zip>
 		<delete dir="${temp.dir}"/>

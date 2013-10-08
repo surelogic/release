@@ -2,7 +2,7 @@
 <feature
       id="com.surelogic.feature.flashlight.android"
       label="Flashlight Client Android (Optional)"
-      version="4.6.0.qualifier"
+      version="5.0.0.qualifier"
       provider-name="SureLogic, Inc."
       plugin="com.surelogic.flashlight.client.eclipse">
 
@@ -51,6 +51,6 @@
          id="com.surelogic.flashlight.android"
          download-size="0"
          install-size="0"
-         version="4.6.0.qualifier"/>
+         version="5.0.0.qualifier"/>
 
 </feature>

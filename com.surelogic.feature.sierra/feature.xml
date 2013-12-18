@@ -60,7 +60,7 @@
          id="com.surelogic.sierra.tool"
          download-size="0"
          install-size="0"
-         version="4.3.4.qualifier"/>
+         version="5.2.0.qualifier"/>
 
    <plugin
          id="com.surelogic.sierra.jdbc"

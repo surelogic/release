@@ -89,4 +89,11 @@
          version="5.3.0.qualifier"
          unpack="false"/>
 
+   <plugin
+         id="com.surelogic.flashlight.dex2jar"
+         download-size="0"
+         install-size="0"
+         version="5.3.0.qualifier"
+         unpack="false"/>
+
 </feature>

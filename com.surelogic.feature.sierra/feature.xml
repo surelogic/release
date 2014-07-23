@@ -83,18 +83,6 @@
          unpack="false"/>
 
    <plugin
-         id="com.surelogic.sierra.fb"
-         download-size="0"
-         install-size="0"
-         version="2.0.3.qualifier"/>
-
-   <plugin
-         id="com.surelogic.sierra.pmd"
-         download-size="0"
-         install-size="0"
-         version="5.0.5.qualifier"/>
-
-   <plugin
          id="com.surelogic.sierra.client.eclipse.help"
          download-size="0"
          install-size="0"
@@ -114,5 +102,17 @@
          install-size="0"
          version="5.5.0.qualifier"
          unpack="false"/>
+
+   <plugin
+         id="com.surelogic.sierra.fb"
+         download-size="0"
+         install-size="0"
+         version="3.0.0"/>
+
+   <plugin
+         id="com.surelogic.sierra.pmd"
+         download-size="0"
+         install-size="0"
+         version="5.1.1"/>
 
 </feature>

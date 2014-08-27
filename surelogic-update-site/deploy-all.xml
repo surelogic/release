@@ -1,12 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project default="deploy">
 
-	<target name="deploy" depends="cleanup,deploy-docs,deploy-server" />
+	<target name="deploy" depends="cleanup,deploy-docs,deploy-server,deploy-instrumentation" />
 
-	<target name="deploy-no-docs" depends="cleanup-server,deploy-server" />
+	<target name="deploy-no-docs" depends="cleanup-server,deploy-server,deploy-instrumentation" />
 
 	<target name="redeploy-no-docs" depends="redeploy-server" />
 
+	<target name="deploy-instrumentation">
+	    <ant antfile="flashlight.xml" dir="../../flashlight/flashlight-instrumentation-5.0" target="build-jars" />
+	</target>
+	
 	<target name="deploy-docs">
 		<ant antfile="build.xml" dir="../../documentation/surelogic-docs" target="build-and-install" />
 	</target>

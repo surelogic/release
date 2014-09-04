@@ -108,13 +108,13 @@
          download-size="0"
          install-size="0"
          version="3.0.0.qualifier"
-         unpack="false"/>
+         />
 
    <plugin
          id="com.surelogic.sierra.pmd"
          download-size="0"
          install-size="0"
          version="5.1.1.qualifier"
-         unpack="false"/>
+         />
 
 </feature>

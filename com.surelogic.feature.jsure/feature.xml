@@ -2,7 +2,7 @@
 <feature
       id="com.surelogic.feature.jsure"
       label="JSure Client"
-      version="5.5.2.qualifier"
+      version="5.6.0.qualifier"
       provider-name="SureLogic, Inc."
       plugin="com.surelogic.jsure.client.eclipse">
 
@@ -57,54 +57,54 @@
          id="edu.cmu.cs.fluid"
          download-size="0"
          install-size="0"
-         version="5.5.2.qualifier"/>
+         version="5.6.0.qualifier"/>
 
    <plugin
          id="com.surelogic.common"
          download-size="0"
          install-size="0"
-         version="5.5.2.qualifier"/>
+         version="5.6.0.qualifier"/>
 
    <plugin
          id="com.surelogic.jsure.client.eclipse"
          download-size="0"
          install-size="0"
-         version="5.5.2.qualifier"
+         version="5.6.0.qualifier"
          unpack="false"/>
 
    <plugin
          id="com.surelogic.jsure.client.help"
          download-size="0"
          install-size="0"
-         version="5.5.2.qualifier"
+         version="5.6.0.qualifier"
          unpack="false"/>
 
    <plugin
          id="com.surelogic.jsure.design.intent.help"
          download-size="0"
          install-size="0"
-         version="5.5.2.qualifier"
+         version="5.6.0.qualifier"
          unpack="false"/>
 
    <plugin
          id="com.surelogic.common.core"
          download-size="0"
          install-size="0"
-         version="5.5.2.qualifier"
+         version="5.6.0.qualifier"
          unpack="false"/>
 
    <plugin
          id="com.surelogic.common.ui"
          download-size="0"
          install-size="0"
-         version="5.5.2.qualifier"
+         version="5.6.0.qualifier"
          unpack="false"/>
 
    <plugin
          id="com.surelogic.jsure.core"
          download-size="0"
          install-size="0"
-         version="5.5.2.qualifier"
+         version="5.6.0.qualifier"
          unpack="false"/>
 
 </feature>

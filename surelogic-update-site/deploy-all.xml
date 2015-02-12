@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project default="deploy">
 
-	<target name="deploy" depends="cleanup,deploy-docs,deploy-server,deploy-instrumentation,deploy-ant" />
+	<target name="deploy" depends="cleanup,deploy-docs,deploy-server,deploy-instrumentation,deploy-ant,deploy-maven" />
 
-	<target name="deploy-no-docs" depends="cleanup-server,deploy-server,deploy-instrumentation,deploy-ant" />
+	<target name="deploy-no-docs" depends="cleanup-server,deploy-server,deploy-instrumentation,deploy-ant,deploy-maven" />
 
 	<target name="redeploy-no-docs" depends="redeploy-server" />
 
@@ -11,7 +11,10 @@
 	    <ant antfile="build.xml" dir="../../flashlight/flashlight-ant" target="build-jars" />
 	    <ant antfile="build.xml" dir="../../sierra/sierra-ant" target="all" />
 	</target>
-	
+    <target name="deploy-maven">
+        <ant antfile="build.xml" dir="../../flashlight/flashlight-plugin" target="install-tools" />
+        <ant antfile="build.xml" dir="../../sierra/sierra-plugin" target="install-tools" />
+    </target>	
 	<target name="deploy-instrumentation">
 	    <ant antfile="flashlight.xml" dir="../../flashlight/flashlight-instrumentation-5.0" target="build-jars" />
 	</target>

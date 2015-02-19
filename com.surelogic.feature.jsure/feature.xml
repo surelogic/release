@@ -26,7 +26,6 @@
       <import plugin="com.surelogic.common"/>
       <import plugin="com.surelogic.common.core"/>
       <import plugin="com.surelogic.common.ui"/>
-      <import plugin="edu.cmu.cs.fluid"/>
       <import plugin="com.surelogic.jsure.core"/>
       <import plugin="org.eclipse.ui"/>
       <import plugin="org.eclipse.core.runtime"/>
@@ -51,6 +50,8 @@
       <import plugin="org.eclipse.debug.core"/>
       <import plugin="org.eclipse.debug.ui"/>
       <import plugin="org.eclipse.core.filesystem"/>
+      <import plugin="com.surelogic.jsure.analysis"/>
+      <import plugin="com.surelogic.jsure.common"/>
    </requires>
 
    <plugin

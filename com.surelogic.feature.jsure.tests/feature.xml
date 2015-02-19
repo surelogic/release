@@ -24,15 +24,16 @@
    <requires>
       <import plugin="com.surelogic.common"/>
       <import plugin="com.surelogic.common.core"/>
-      <import plugin="edu.cmu.cs.fluid"/>
+      <import plugin="com.surelogic.jsure.core"/>
       <import plugin="org.junit"/>
       <import plugin="org.eclipse.core.runtime"/>
       <import plugin="org.eclipse.core.resources"/>
       <import plugin="org.eclipse.jdt.core"/>
       <import plugin="org.eclipse.jdt.launching"/>
-      <import plugin="com.surelogic.jsure.core"/>
       <import plugin="org.eclipse.compare"/>
       <import plugin="org.eclipse.debug.core"/>
+      <import plugin="com.surelogic.jsure.analysis"/>
+      <import plugin="com.surelogic.jsure.common"/>
    </requires>
 
    <plugin
@@ -55,13 +56,21 @@
          unpack="false"/>
 
    <plugin
-         id="edu.cmu.cs.fluid"
+         id="com.surelogic.jsure.core"
          download-size="0"
          install-size="0"
-         version="5.6.0.qualifier"/>
+         version="5.6.0.qualifier"
+         unpack="false"/>
 
    <plugin
-         id="com.surelogic.jsure.core"
+         id="com.surelogic.jsure.analysis"
+         download-size="0"
+         install-size="0"
+         version="5.6.0.qualifier"
+         unpack="false"/>
+
+   <plugin
+         id="com.surelogic.jsure.common"
          download-size="0"
          install-size="0"
          version="5.6.0.qualifier"

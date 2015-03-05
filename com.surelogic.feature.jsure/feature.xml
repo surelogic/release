@@ -112,7 +112,6 @@
          id="com.surelogic.jsure.common"
          download-size="0"
          install-size="0"
-         version="5.6.0.qualifier"
-         unpack="false"/>
+         version="5.6.0.qualifier"/>
 
 </feature>

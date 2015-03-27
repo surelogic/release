@@ -3,42 +3,36 @@
 
 	<description>SureLogic Tools Preparation for Eclipse Feature Build</description>
 
-	<!-- Use one of these targets -->
 	<target name="deploy" depends="cleanup,deploy-docs,deploy-server,deploy-instrumentation,deploy-ant,deploy-maven" />
-	<target name="deploy-no-docs" depends="cleanup-server,deploy-server,deploy-instrumentation,deploy-ant,deploy-maven" />
-	<target name="redeploy-no-docs" depends="redeploy-server" />
 
-	<target name="cleanup" depends="cleanup-docs,cleanup-server">
-		<echo>All SureLogic undeployment and cleanup completed</echo>
-	</target>
-	<target name="cleanup-docs">
+	<target name="cleanup">
 		<ant antfile="build.xml" dir="../../documentation/surelogic-docs" target="clean-and-uninstall" inheritAll="false" />
-	</target>
-	<target name="cleanup-server">
 		<ant antfile="undeploy-from-jetty.xml" dir="../../sierra/sierra-jetty" inheritAll="false" />
 		<ant antfile="team-server-undeploy.xml" dir="../../sierra/sierra-team-server-client-eclipse" inheritAll="false" />
+		<echo>All SureLogic undeployment and cleanup completed</echo>
 	</target>
 
 	<target name="deploy-docs">
 		<ant antfile="build.xml" dir="../../documentation/surelogic-docs" target="build-and-install" />
+		<echo>All SureLogic documents completed</echo>
 	</target>
 	<target name="deploy-server">
 		<ant antfile="deploy-to-jetty.xml" dir="../../sierra/sierra-jetty" inheritAll="false" />
 		<ant antfile="team-server-deploy.xml" dir="../../sierra/sierra-team-server-client-eclipse" target="deploy" inheritAll="false" />
-	</target>
-	<target name="redeploy-server">
-		<ant antfile="deploy-to-jetty.xml" dir="../../sierra/sierra-jetty" inheritAll="false" />
-		<ant antfile="team-server-deploy.xml" dir="../../sierra/sierra-team-server-client-eclipse" target="redeploy" inheritAll="false" />
+		<echo>Sierra Team Server deployed (including local team server)</echo>
 	</target>
 	<target name="deploy-instrumentation">
 		<ant antfile="flashlight.xml" dir="../../flashlight/flashlight-instrumentation-5.0" target="build-jars" />
+		<echo>Flashlight instrumentation built and deployed</echo>
 	</target>
 	<target name="deploy-ant">
 		<ant antfile="build.xml" dir="../../flashlight/flashlight-ant" target="build-jars" />
 		<ant antfile="build.xml" dir="../../sierra/sierra-ant" target="all" />
+		<echo>SureLogic Ant tasks built and deployed</echo>
 	</target>
 	<target name="deploy-maven">
 		<ant antfile="build.xml" dir="../../flashlight/flashlight-plugin" target="install-tools" />
 		<ant antfile="build.xml" dir="../../sierra/sierra-plugin" target="install-tools" />
+		<echo>SureLogic Maven plugins built and deployed</echo>
 	</target>
 </project>

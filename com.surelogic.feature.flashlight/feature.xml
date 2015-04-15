@@ -6,20 +6,20 @@
       provider-name="SureLogic, Inc."
       plugin="com.surelogic.flashlight.client.eclipse">
 
-   <description url="http://www.surelogic.com">
+   <description url="http://surelogic.com">
       Install this feature to use SureLogic Flashlight within Eclipse.
    </description>
 
-   <copyright url="http://www.surelogic.com">
+   <copyright url="http://surelogic.com">
       Copyright (c) 2012 SureLogic, Inc. All rights reserved.
    </copyright>
 
-   <license url="http://www.surelogic.com/license/eula.html">
-      The EULA can be found at http://www.surelogic.com/license/eula.html
+   <license url="http://surelogic.com/license/eula.html">
+      The EULA can be found at http://surelogic.com/license/eula.html
    </license>
 
    <url>
-      <update label="SureLogic" url="http://www.surelogic.com/static/eclipse/"/>
+      <update label="SureLogic" url="http://surelogic.com/static/eclipse/"/>
    </url>
 
    <requires>

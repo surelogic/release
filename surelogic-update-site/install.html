@@ -7,24 +7,29 @@
     <style type="text/css">
       a.btn {
         background-color: #ff5f1e;
-        color: #FFFFFF;
+        color: #000000;
         display: block;
-        font-size: 14px;
-        font-weight: bold;
         margin-left: auto;
         margin-right: auto;
-        outline: 1px solid #ff5f1e;
         padding: 4px 0 4px;
         text-align: center;
         text-decoration: none;
-        width: 400px;
-      }
+        width: 400px; }
+      p.cen { text-align: center }
+      p.cencode {
+        text-align: center;
+        font-size: 110%;
+        font-family: "Lucida Console", Monaco, monospace }
+      h2.title {
+        font-size: 150%;
+        font-family: "Trebuchet MS", Helvetica, sans-serif }
     </style>
   </head>
   <body lang="EN-US">
+  
+    <p class="cen"><img src="./images/install-logo.png" alt="SureLogic"/></p>
     
-    <h2><img src="./images/install-logo.png" alt="SureLogic"/> &mdash; Downloading and
-    Installing the SureLogic Tools</h2>
+    <h2 class="title">Downloading and Installing the Eclipse-based SureLogic Tools</h2>
     
     <p>The current SureLogic tool release is version [[VER]]. You must be running
     Eclipse on a Java 7 VM (see below).</p>
@@ -41,14 +46,14 @@
     free to also file any problems or questions on Bugzilla at our website.</p>
 
     <p><a class="btn" href="./[[ZIP]]">Click download an archived update site
-    for SureLogic tools version [[VER]] you can load into Eclipse</a></p>
+    for SureLogic tools version [[VER]] you can load into Eclipse</a></a></p>
     
-    <p align=center>or</p>
+    <p class="cen">or</p>
     
     <p><a class="btn" href="./install.html">point your Eclipse at the SureLogic
     update site:</a></p>
 
-    <p align=center><tt>http://surelogic.com/static/eclipse</tt></p>
+    <p class="cencode">[[UPS]]</p>
 
     <p>The SureLogic tools contained in the Zip download are an
     archived Eclipse update site you can use to install
@@ -134,9 +139,8 @@
 	  better done from an archived update site, which you can find <a
 	  href="./[[ZIP]]">here</a> (the same file downloaded by the above button). This archive
 	  contains the Sierra, JSure, and Flashlight features.  If you are an
-	  advanced Eclipse user, you can also use our update site, located at <a
-	  href="http://surelogic.com/static/eclipse">http://surelogic.com/static/eclipse</a>
-	  and skip to step 3.
+	  advanced Eclipse user, you can choose to use our update site, located at
+	  <tt>[[UPS]]</tt>, and skip to step 3.
 	</p>
       </li>
 
@@ -225,10 +229,8 @@
 	tools by checking for updates from Eclipse. If you have not configured
 	Eclipse to periodically check for updates, you can check for tool
 	updates by selecting 'Help | Check For Updates'.  This will check
-	the SureLogic update site
-	at <a href="http://surelogic.com/static/eclipse">http://surelogic.com/static/eclipse</a>
-	for any updates, regardless of whether you installed the tools from the
-	archive site or from the remote site.</p>
+	the SureLogic update site at <tt>[[UPS]]</tt> for any updates, regardless
+	of whether you installed the tools from the	archive site or from the remote site.</p>
       </li>
     </ol>
 

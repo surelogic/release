@@ -30,6 +30,7 @@
 	</loadfile>
 
 	<property name="release.zip" value="surelogic-tools-${release-version}.zip" />
+	<property name="update.site" value="http://surelogic.com/static/eclipse" />
 
 	<target name="package">
 		<echo>The update site should be built before packaging for http://surelogic.com/static/eclipse</echo>
@@ -69,6 +70,9 @@
 				</tokenfilter>
 				<tokenfilter>
 					<replaceregex pattern="\[\[ZIP\]\]" replace="${release.zip}" flags="g" />
+				</tokenfilter>
+				<tokenfilter>
+					<replaceregex pattern="\[\[UPS\]\]" replace="${update.site}" flags="g" />
 				</tokenfilter>
 			</filterchain>
 		</loadfile>

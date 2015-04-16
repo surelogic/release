@@ -10,7 +10,7 @@
 		<delete quiet="true" dir="plugins" />
 		<delete quiet="true" file="artifacts.jar" />
 		<delete quiet="true" file="content.jar" />
-		<echo>CHECK THAT "site.xml" only contains ".qualifier.jar" not an actual version!</echo>
+		<echo>CHECK THAT "site.xml" only contains "flashlight_X.X.X.qualifier.jar" entriees and not an actual version!</echo>
 	</target>
 
 	<target name="deploy-instrumentation">

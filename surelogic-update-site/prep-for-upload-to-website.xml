@@ -32,7 +32,7 @@
 	<property name="release.zip" value="surelogic-tools-${release-version}.zip" />
 
 	<target name="package">
-		<echo>The update site should be built before packaging for surelogic.com...</echo>
+		<echo>The update site should be built before packaging for http://surelogic.com/static/eclipse</echo>
 		<echo>  Packaging ${release-version}</echo>
 		<echo>(pausing just a second so you can ^C if anthing looks wrong)
 		    </echo>
@@ -50,7 +50,7 @@
 				<exclude name="**/.*" />
 			</fileset>
 		</copy>
-		<zip destfile="${build}/${release.zip}">
+		<zip destfile="${build}/${release.zip}" level="9">
 			<zipfileset dir="${build.stage}" />
 		</zip>
 		<!-- prep stage for surelogic.com/static/eclipse/ location -->
@@ -73,7 +73,7 @@
 			</filterchain>
 		</loadfile>
 		<echo file="${build.stage}/install.html" message="${install.html}" />
-		<zip destfile="${basedir}/upload-to-website.zip">
+		<zip destfile="${basedir}/upload-to-website.zip" level="9">
 			<zipfileset dir="${build.stage}" prefix="stage" />
 		</zip>
 	</target>

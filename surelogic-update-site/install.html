@@ -115,7 +115,7 @@
     <p><strong><em>Before you begin:</em></strong> Make sure that your operating
     system user has read/write access to the Eclipse directory.  Plugin
     installation fails on some systems if Eclipse is unable to write to its
-    installation directory.  We also recommend that you allow 1024 MB of heap
+    installation directory.  We also recommend that you allow roughly 1 GB of heap
     space for your Eclipse JVM.  You can change this setting by modifying the
     <tt>-Xmx</tt> arguments in your
     <em>eclipse.ini</em> file located in your Eclipse installation directory. For example,
@@ -131,6 +131,16 @@
 	<pre>-vmargs
 -Xms40m
 -Xmx1g</pre>
+
+    <p>If you are <em>not</em> using a Java 8 VM you should also consider setting Perm Gen to 512 MB.
+    To do this change <tt>--launcher.XXMaxPermSize</tt> in <em>eclipse.ini</em> (there might
+    be two entries in the file) as as below</p>
+    
+        <pre>--launcher.XXMaxPermSize
+512m</pre>
+
+    <p>Most modern Eclipse releases set this to 265 MB which might be okay for most uses.
+    The best solution is to use a Java 8 VM (in which Oracle removed this as a setting).</p>
     
     <ol>
       <li>

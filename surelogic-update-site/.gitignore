@@ -3,5 +3,3 @@
 /logs.zip
 /*.jar
 /build/
-# so that changes do not get checked in
-site.xml

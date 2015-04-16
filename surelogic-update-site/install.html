@@ -26,6 +26,9 @@
     <h2><img src="./images/install-logo.png" alt="SureLogic"/> &mdash; Downloading and
     Installing the SureLogic Tools</h2>
     
+    <p>The current tool release is version [[VER]]. You must be running
+    on a Java 7 VM (see below).</p>
+    
     <p> It should take no more than 5 minutes for you to get up and
     running if you already have a working Eclipse installed on your
     machine. If you do not have Eclipse please go to the <a
@@ -33,22 +36,25 @@
     and download and install a copy. If you have any problems getting
     up and running, please call Tim Halloran at (412) 722-3338 for
     help. We want you to have a good experience with our product and
-    are ready to help (it can sometimes be difficult to navigate the
-    Eclipse plug-in installation and management user interface).</p>
+    are ready to help. We realize that it can be difficult to navigate the
+    Eclipse plug-in installation and management user interface. Feel
+    free to also file any problems or questions on Bugzilla at our website.</p>
 
-    <p><a class="btn" href="./surelogic-tools-5-5-2-20141024.zip">Download
-    Current Release</a></p>
+    <p><a class="btn" href="./[[ZIP]]">Download [[VER]] archived update site</a></p>
 
-    <p>The SureLogic tools contained in the Zip download above install
-    as a feature in your Eclipse IDE. They are installed (and
-    uninstalled) via the normal Eclipse mechanisms from an archived
-    update site that you obtain from SureLogic. The following tools are
+    <p>The SureLogic tools contained in the Zip download are an
+    archived Eclipse update site you can use to install
+    the tools in your Eclipse IDE. The release is installed (and
+    uninstalled) via the normal Eclipse mechanisms. Detailed
+    instructions are given below. The following tools are
     available as Eclipse features:</p>
 
     <dl>
       <dt><em>Flashlight Client</em></dt>
-      <dd>Flashlight is a runtime profiler that illuminates threading behavior
-      and access to shared state. </dd>
+      <dd>Flashlight is a dynamic analysis tools for Java focused on
+      understanding, diagnosing, and correcting concurrency issues. It
+      can be thought of as a "concurrency-focused profiler" as it also
+      helps the developer to improve program responsiveness and performance. </dd>
 
       <dt><em>Flashlight Client Android (Optional)</em></dt>
       <dd>Flashlight is a runtime profiler that illuminates threading behavior
@@ -60,14 +66,15 @@
     <dl>
       <dt><em>JSure Client</em></dt>
       <dd>JSure is a model-based static analysis tool that helps developers gain
-      confidence in their multi-threaded code, regardless of scale or
-      complexity.</dd>
+      confidence in their code, regardless of scale or complexity. JSure
+      produces analysis-based verification results of consistency between
+      programmer annotations (e.g., @ThreadSafe or @NonNull) and code.</dd>
     </dl>
     <dl>
       <dt><em>Sierra Client</em></dt>
       <dd>Sierra is a bug management tool that helps developers deal with the
       often overwhelming number of findings produced by popular source code
-      analysis tools when analyzing large codebases.</dd>
+      analysis tools (e.g., FindBugs and PMD) when analyzing large codebases.</dd>
      
       <dt><em>Sierra Local Team Server (Optional)</em></dt>
       <dd>Install the Sierra Local Team Server feature if you want to
@@ -77,16 +84,17 @@
     </dl>
 
     <p>The tools may be installed and used in versions 3.7.2 and
-    higher of Eclipse. Eclipse 4.4 (or higher) is needed for Java 8 support.
+    higher of Eclipse (higher being recommend).
+    Eclipse 4.4 (or higher) is needed for Java 8 support.
     If you are not sure if your version of Eclipse is
     supported please contact SureLogic. The Eclipse-based IBM Rational
-    Application Developer for WebSphere Software (RAD) 8.0 is supported.  </p>
+    Application Developer for WebSphere Software (RAD) 8.0 is supported.</p>
 
-    <p><em>The current release of SureLogic Tools requires a Java 7 virtual
-    machine be used to run the Eclipse that the tools are installed in.</em>
+    <p><em>The current release of SureLogic Tools requires a Java 7 VM
+    be used to run the Eclipse that the tools are installed in.</em>
     Note: Eclipse will unfortunately allow the tools to be installed even if it
     is running in a Java 1.6 VM, but on restart the SureLogic Tools will not
-    show up in the menu.  If you need more information on how to use Eclipse
+    show up in the menu.  If you need more information on how to setup your Eclipse
     with multiple virtual machines, <a
     href="https://www.youtube.com/watch?v=jxGZ1xTEqv0">this video</a> may prove
     useful.</p>
@@ -98,7 +106,8 @@
     space for your Eclipse JVM.  You can change this setting by modifying the
     <tt>-Xmx</tt> arguments in your
     <em>eclipse.ini</em> file located in your Eclipse installation directory. For example,
-    under Eclipse 3.7 under Windows, you would change the last few lines of the <em>eclipse.ini</em> file from</p>
+    under Eclipse 3.7 under Windows, you would change the last few lines of
+    the <em>eclipse.ini</em> file from</p>
     
     <pre>-vmargs
 -Xms40m
@@ -108,14 +117,14 @@
 	
 	<pre>-vmargs
 -Xms40m
--Xmx1024m</pre>
+-Xmx1g</pre>
     
     <ol>
       <li>
 	<p>
 	  We find that installing the tools, especially for the first time, is
 	  better done from an archived update site, which you can find <a
-	  href="./surelogic-tools-5-5-2-20141024.zip">here</a>. This archive
+	  href="./[[ZIP]]">here</a> (the same file downloaded by the above button). This archive
 	  contains the Sierra, JSure, and Flashlight features.  If you are an
 	  advanced Eclipse user, you can also use our update site, located at <a
 	  href="http://surelogic.com/static/eclipse">http://surelogic.com/static/eclipse</a>
@@ -215,6 +224,9 @@
       </li>
     </ol>
 
-    <p><img src="http://www.w3.org/Icons/valid-xhtml10-blue" alt="Valid XHTML 1.0 Strict" height="31" width="88" /></p>
+   <p>
+    <a href="http://validator.w3.org/check?uri=referer"><img
+      src="http://www.w3.org/Icons/valid-xhtml10" alt="Valid XHTML 1.0 Strict" height="31" width="88" /></a>
+   </p>
   </body>
 </html>

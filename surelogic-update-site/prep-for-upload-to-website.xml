@@ -31,11 +31,9 @@
 
 	<property name="release.zip" value="surelogic-tools-${release-version}.zip" />
 
-
-
 	<target name="package">
 		<echo>The update site should be built before packaging for surelogic.com...</echo>
-		<echo>(the release appears to be "${release-version}")</echo>
+		<echo>  Packaging ${release-version}</echo>
 		<echo>(pausing just a second so you can ^C if anthing looks wrong)
 		    </echo>
 		<sleep seconds="4" />
@@ -63,6 +61,18 @@
 			</fileset>
 		</copy>
 		<move file="${build}/${release.zip}" todir="${build.stage}" />
+		<!-- fix the install.html file -->
+		<loadfile property="install.html" srcFile="${basedir}/install.html">
+			<filterchain>
+				<tokenfilter>
+					<replaceregex pattern="\[\[VER\]\]" replace="${release-version}" flags="g" />
+				</tokenfilter>
+				<tokenfilter>
+					<replaceregex pattern="\[\[ZIP\]\]" replace="${release.zip}" flags="g" />
+				</tokenfilter>
+			</filterchain>
+		</loadfile>
+		<echo file="${build.stage}/install.html" message="${install.html}" />
 	</target>
 
 </project>

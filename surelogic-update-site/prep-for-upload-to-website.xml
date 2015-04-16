@@ -73,6 +73,9 @@
 			</filterchain>
 		</loadfile>
 		<echo file="${build.stage}/install.html" message="${install.html}" />
+		<zip destfile="${basedir}/upload-to-website.zip">
+			<zipfileset dir="${build.stage}" prefix="stage" />
+		</zip>
 	</target>
 
 </project>

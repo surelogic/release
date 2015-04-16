@@ -1,8 +1,7 @@
 /features
 /plugins
 /logs.zip
-/artifacts.xml
-/content.xml
-/artifacts.jar
-/content.jar
-/surelogic-tools-*.zip
+/*.jar
+/build/
+# so that changes do not get checked in
+site.xml

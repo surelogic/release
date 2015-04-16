@@ -3,17 +3,15 @@
 
 	<description>SureLogic Tools Preparation for Eclipse Feature Build</description>
 
-	<target name="deploy" depends="deploy-docs,deploy-server,deploy-instrumentation,deploy-ant,deploy-maven" />
+	<target name="deploy" depends="deploy-instrumentation,deploy-ant,deploy-maven,deploy-server,deploy-docs">
+		<echo>Clearing out build (if any)</echo>
+		<delete quiet="true" dir="build" />
+		<delete quiet="true" dir="features" />
+		<delete quiet="true" dir="plugins" />
+		<delete quiet="true" file="artifacts.jar" />
+		<delete quiet="true" file="content.jar" />
+	</target>
 
-	<target name="deploy-docs">
-		<ant antfile="build.xml" dir="../../documentation/surelogic-docs" />
-		<echo>All SureLogic documents built and deployed</echo>
-	</target>
-	<target name="deploy-server">
-		<ant antfile="build.xml" dir="../../sierra/sierra-web-jetty" inheritAll="false" />
-		<ant antfile="team-server-deploy.xml" dir="../../sierra/sierra-team-server-client-eclipse" inheritAll="false" />
-		<echo>Sierra Team Server built and deployed (including local team server)</echo>
-	</target>
 	<target name="deploy-instrumentation">
 		<ant antfile="flashlight.xml" dir="../../flashlight/flashlight-instrumentation-5.0" target="build-jars" />
 		<echo>Flashlight instrumentation built and deployed</echo>
@@ -27,5 +25,14 @@
 		<ant antfile="build.xml" dir="../../flashlight/flashlight-mvn" target="install-tools" />
 		<ant antfile="build.xml" dir="../../sierra/sierra-mvn" target="install-tools" />
 		<echo>SureLogic Maven plugins built and deployed</echo>
+	</target>
+	<target name="deploy-server">
+		<ant antfile="build.xml" dir="../../sierra/sierra-web-jetty" inheritAll="false" />
+		<ant antfile="team-server-deploy.xml" dir="../../sierra/sierra-team-server-client-eclipse" inheritAll="false" />
+		<echo>Sierra Team Server built and deployed (including local team server)</echo>
+	</target>
+	<target name="deploy-docs">
+		<ant antfile="build.xml" dir="../../documentation/surelogic-docs" />
+		<echo>All SureLogic documents built and deployed</echo>
 	</target>
 </project>

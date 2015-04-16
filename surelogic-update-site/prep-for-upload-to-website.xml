@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="SureLogic Tools Preparation for Website Release" default="package">
+
+	<description>SureLogic Tools Preparation for Website Release</description>
+
+	<property name="build" location="${basedir}/build" />
+	<property name="build.stage" location="${basedir}/build/stage" />
+
+	<!-- Trying to determine the release version from the help plug-in -->
+	<!-- Hack that reads the site.xml to extract the release version -->
+	<loadfile property="release-version" srcFile="${basedir}/site.xml">
+		<filterchain>
+			<linecontains>
+				<contains value="features/com.surelogic.feature.jsure_" />
+			</linecontains>
+			<striplinebreaks />
+			<!-- remove spaces -->
+			<tokenfilter>
+				<replaceregex pattern=" " replace="" flags="g" />
+			</tokenfilter>
+			<!-- remove prefix -->
+			<tokenfilter>
+				<replaceregex pattern="^(.+)jsure_" replace="" />
+			</tokenfilter>
+			<!-- remove suffix -->
+			<tokenfilter>
+				<replaceregex pattern="\.jar(.+)$" replace="" />
+			</tokenfilter>
+		</filterchain>
+	</loadfile>
+
+	<property name="release.zip" value="surelogic-tools-${release-version}.zip" />
+
+
+
+	<target name="package">
+		<echo>The update site should be built before packaging for surelogic.com...</echo>
+		<echo>(the release appears to be "${release-version}")</echo>
+		<echo>(pausing just a second so you can ^C if anthing looks wrong)
+		    </echo>
+		<sleep seconds="4" />
+		<delete quiet="true" dir="${build}" />
+		<mkdir dir="${build}" />
+		<mkdir dir="${build.stage}" />
+		<!-- prep stage to build release archive -->
+		<copy todir="${build.stage}">
+			<fileset dir="${basedir}">
+				<include name="features/**" />
+				<include name="plugins/**" />
+				<include name="*.jar" />
+				<include name="site.xml" />
+				<exclude name="**/.*" />
+			</fileset>
+		</copy>
+		<zip destfile="${build}/${release.zip}">
+			<zipfileset dir="${build.stage}" />
+		</zip>
+		<!-- prep stage for surelogic.com/static/eclipse/ location -->
+		<copy todir="${build.stage}">
+			<fileset dir="${basedir}">
+				<include name="images/**" />
+				<exclude name="**/.*" />
+			</fileset>
+		</copy>
+		<move file="${build}/${release.zip}" todir="${build.stage}" />
+	</target>
+
+</project>

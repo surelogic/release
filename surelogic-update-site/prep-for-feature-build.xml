@@ -20,6 +20,7 @@
 	<target name="deploy-ant">
 		<ant antfile="build.xml" dir="../../flashlight/flashlight-ant" target="build-jars" />
 		<ant antfile="build.xml" dir="../../sierra/sierra-ant" target="all" />
+		<ant antfile="build.xml" dir="../../jsure/jsure-ant" target="all" />
 		<echo>SureLogic Ant tasks built and deployed</echo>
 	</target>
 	<target name="deploy-maven">

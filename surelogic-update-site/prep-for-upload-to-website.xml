@@ -31,6 +31,7 @@
 
 	<property name="release.zip" value="surelogic-tools-${release-version}.zip" />
 	<property name="update.site" value="http://surelogic.com/static/eclipse" />
+	<property name="website.zip" value="upload-to-website.zip" />
 
 	<target name="package">
 		<echo>The update site should be built before packaging for http://surelogic.com/static/eclipse</echo>
@@ -77,9 +78,10 @@
 			</filterchain>
 		</loadfile>
 		<echo file="${build.stage}/install.html" message="${install.html}" />
-		<zip destfile="${basedir}/upload-to-website.zip" level="9">
+		<zip destfile="${basedir}/${website.zip}" level="9">
 			<zipfileset dir="${build.stage}" prefix="stage" />
 		</zip>
+		<move file="${basedir}/${website.zip}" todir="${build}" />
 	</target>
 
 </project>

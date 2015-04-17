@@ -35,8 +35,8 @@
 
 	<target name="package">
 		<echo>The update site should be built before packaging for http://surelogic.com/static/eclipse</echo>
-		<echo>  Packaging ${release-version}</echo>
-		<echo>(pausing just a second so you can ^C if anthing looks wrong)
+		<echo>  Packaging tools release ${release-version}</echo>
+		<echo>(pausing just a second so you can ^C if anything looks wrong)
 		    </echo>
 		<sleep seconds="4" />
 		<delete quiet="true" dir="${build}" />

@@ -3,6 +3,9 @@
 
 	<description>SureLogic Tools Preparation for Eclipse Feature Build</description>
 
+	<property name="ant.dir" location="${basedir}/ant" />
+	<property name="mvn.dir" location="${basedir}/mvn" />
+
 	<target name="deploy" depends="deploy-instrumentation,deploy-ant,deploy-maven,deploy-server,deploy-docs">
 		<echo>Clearing out build (if any)</echo>
 		<delete quiet="true" dir="build" />
@@ -18,9 +21,16 @@
 		<echo>Flashlight instrumentation built and deployed</echo>
 	</target>
 	<target name="deploy-ant">
+		<delete quiet="true" dir="${ant.dir}" />
+		<mkdir dir="${ant.dir}" />
 		<ant antfile="build.xml" dir="../../flashlight/flashlight-ant" target="build-jars" />
 		<ant antfile="build.xml" dir="../../sierra/sierra-ant" target="all" />
 		<ant antfile="build.xml" dir="../../jsure/jsure-ant" target="all" />
+		<copy todir="${ant.dir}">
+			<fileset dir="../../jsure/jsure-ant/build">
+				<include name="jsure-ant*.zip" />
+			</fileset>
+		</copy>
 		<echo>SureLogic Ant tasks built and deployed</echo>
 	</target>
 	<target name="deploy-maven">

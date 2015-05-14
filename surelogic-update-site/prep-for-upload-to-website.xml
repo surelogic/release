@@ -29,6 +29,22 @@
 		</filterchain>
 	</loadfile>
 
+	<!-- Trying to determine the release version from the common plug-in -->
+	<!-- Hack that reads the "Bundle-Version: 5.2.2.qualifier" line to come 
+	    up with "5.2.2" -->
+	<loadfile property="simple-version" srcFile="../../common/common/META-INF/MANIFEST.MF">
+		<filterchain>
+			<linecontains>
+				<contains value="Bundle-Version:" />
+			</linecontains>
+			<striplinebreaks />
+			<deletecharacters chars="Bundle-Version: qualifier" />
+			<tokenfilter>
+				<replaceregex pattern="\.$" replace="" flags="g" />
+			</tokenfilter>
+		</filterchain>
+	</loadfile>
+
 	<property name="release.zip" value="surelogic-tools-${release-version}.zip" />
 	<property name="update.site" value="http://surelogic.com/static/eclipse" />
 	<property name="website.zip" value="upload-to-website.zip" />
@@ -45,6 +61,8 @@
 		<!-- prep stage to build release archive -->
 		<copy todir="${build.stage}">
 			<fileset dir="${basedir}">
+				<include name="ant/**" />
+				<include name="mvn/**" />
 				<include name="features/**" />
 				<include name="plugins/**" />
 				<include name="*.jar" />
@@ -66,6 +84,9 @@
 		<!-- fix the install.html file -->
 		<loadfile property="install.html" srcFile="${basedir}/install.html">
 			<filterchain>
+				<tokenfilter>
+					<replaceregex pattern="\[\[SVER\]\]" replace="${simple-version}" flags="g" />
+				</tokenfilter>
 				<tokenfilter>
 					<replaceregex pattern="\[\[VER\]\]" replace="${release-version}" flags="g" />
 				</tokenfilter>

@@ -61,8 +61,6 @@
 		<!-- prep stage to build release archive -->
 		<copy todir="${build.stage}">
 			<fileset dir="${basedir}">
-				<include name="ant/**" />
-				<include name="mvn/**" />
 				<include name="features/**" />
 				<include name="plugins/**" />
 				<include name="*.jar" />
@@ -81,6 +79,13 @@
 			</fileset>
 		</copy>
 		<move file="${build}/${release.zip}" todir="${build.stage}" />
+		<copy todir="${build.stage}">
+			<fileset dir="${basedir}">
+				<include name="ant/**" />
+				<include name="mvn/**" />
+				<exclude name="**/.*" />
+			</fileset>
+		</copy>
 		<!-- fix the install.html file -->
 		<loadfile property="install.html" srcFile="${basedir}/install.html">
 			<filterchain>

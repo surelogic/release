@@ -16,6 +16,7 @@
         text-decoration: none;
         width: 400px; }
       p.cen { text-align: center }
+      p.rgt { text-align: right }
       p.cencode {
         text-align: center;
         font-size: 110%;
@@ -36,12 +37,12 @@
   
     <p class="cen"><img src="./images/install-logo.png" alt="SureLogic"/></p>
     
-    <p align="right"><a href="#cl">Download Ant/Maven tools for the current release</a></p>
+    <p class="rgt"><a href="#cl">Download Ant/Maven tools for the current release</a></p>
     
     <h2 class="title">Downloading and Installing the Eclipse-based SureLogic Tools</h2>
     
     <p>The current SureLogic tool release is version [[VER]]. You must be running
-    Eclipse on a Java 7 VM (see below).</p>
+    Eclipse on a Java 7 (or higher) VM (see below).</p>
     
     <p> It should take no more than 5 minutes for you to get up and
     running if you already have a working Eclipse installed on your
@@ -55,7 +56,7 @@
     free to also file any problems or questions on Bugzilla at our website.</p>
 
     <p><a class="btn" href="./[[ZIP]]">Click to download an archived update site
-    for SureLogic tools version [[VER]] you can load into Eclipse</a></a></p>
+    for SureLogic tools version [[VER]] you can load into Eclipse</a></p>
     
     <p class="cen">or</p>
     
@@ -112,7 +113,7 @@
     supported please contact SureLogic. The Eclipse-based IBM Rational
     Application Developer for WebSphere Software (RAD) 8.0 is supported.</p>
 
-    <p><em>The current release of SureLogic Tools requires a Java 7 VM
+    <p><em>The current release of SureLogic Tools requires a Java 7 (or higher) VM
     be used to run the Eclipse that the tools are installed in.</em>
     Note: Eclipse will unfortunately allow the tools to be installed even if it
     is running in a Java 1.6 VM, but on restart the SureLogic Tools will not
@@ -149,52 +150,50 @@
 512m</pre>
 
     <p>Most modern Eclipse releases set this to 265 MB which might be okay for most uses.
-    The best solution is to use a Java 8 VM (in which Oracle removed this as a setting).</p>
+    The best solution is to use a Java 8 VM (in which Oracle removed Perm Gen altogether).</p>
     
     <ol>
       <li>
-	<p>
-	  We find that installing the tools, especially for the first time, is
+	  <p>We find that installing the tools, especially for the first time, is
 	  better done from an archived update site, which you can find <a
 	  href="./[[ZIP]]">here</a> (the same file downloaded by the above button). This archive
 	  contains the Sierra, JSure, and Flashlight features.  If you are an
 	  advanced Eclipse user, you can choose to use our update site, located at
-	  <tt>[[UPS]]</tt>, and skip to step 3.
-	</p>
+	  <tt>[[UPS]]</tt>, and skip to step 3.</p>
       </li>
 
       <li>
-	<p>Select 'Help | Install New Software&hellip;' to open the 'Install'
-	    dialog.  Click the 'Add&hellip;' button in the upper-right of the
-	    dialog.  In the dialog that opens select the
-	    'Archive&hellip;' button and point the file selection dialog that
-	    appears to the to the SureLogic archived update site file downloaded
-	    in step 1, then press 'Open' followed by 'OK'.  The 'Install' dialog
-	    should appear as shown in the figure below.</p>
+	  <p>Select 'Help | Install New Software&hellip;' to open the 'Install'
+	  dialog.  Click the 'Add&hellip;' button in the upper-right of the
+	  dialog.  In the dialog that opens select the
+	  'Archive&hellip;' button and point the file selection dialog that
+	  appears to the to the SureLogic archived update site file downloaded
+	  in step 1, then press 'Open' followed by 'OK'.  The 'Install' dialog
+	  should appear as shown in the figure below.</p>
 
-	    <img src="./images/install-tools-in-eclipse.png" alt="Selecting features to install in Eclipse" />
+	  <img src="./images/install-tools-in-eclipse.png" alt="Selecting features to install in Eclipse" />
 
-	<p>Choose the features you want to install (or simply press 'Select All'), and press
-	    'Next &gt;' and step through the remaining wizard dialog steps. The
-	    features you are installing are not digitally signed, however, you
-	    should allow them to be installed if you are warned by Eclipse that
-	    it can't verify them. Finally, you should restart Eclipse when the
-	    installation is completed.</p>
+	  <p>Choose the features you want to install (or simply press 'Select All'), and press
+	  'Next &gt;' and step through the remaining wizard dialog steps. The
+	  features you are installing are not digitally signed, however, you
+	  should allow them to be installed if you are warned by Eclipse that
+	  it can't verify them. Finally, you should restart Eclipse when the
+	  installation is completed.</p>
 	    
-	 <p><i>Do not check</i> 'Flashlight Client Android (Optional)' <i>if you do not have the
-	    Android Development Tools (ADT) installed in your Eclipse.</i>. Please uncheck this optional
-	    feature as shown in the figure below.</p>
+	  <p><i>Do not check</i> 'Flashlight Client Android (Optional)' <i>if you do not have the
+	  Android Development Tools (ADT) installed in your Eclipse.</i>. Please uncheck this optional
+	  feature as shown in the figure below.</p>
 	    
-	    <img src="./images/install-tools-no-android.png" alt="Don't select the Flashlight Client Android feature if you don't have the Android SDK" />
+	  <img src="./images/install-tools-no-android.png" alt="Don't select the Flashlight Client Android feature if you don't have the Android SDK" />
       </li>
 
       <li><p>When Eclipse restarts you should see an item on the
       Eclipse main menu for each tool that you installed. The first
       thing you need to do is to install the license provided to you
       by SureLogic. To do this select the 'Manage SureLogic Licenses'
-      menu choice from the Eclipse main menu from any of the tools
-      (they all open a common dialog) as shown in the figure
-      below.</p>
+      menu choice from bottom choice of the Eclipse main menu of any
+      of the SureLogic tools (they all open the same dialog). The
+      menu choice in the JSure Eclipse menu is shown in the figure below.</p>
 
       <img src="./images/install-license-menu.png" alt="Main menu choice to install your license" />
 
@@ -203,53 +202,67 @@
 
       <img src="./images/install-license-dialog.png" alt="SureLogic license management dialog showing a license to use Flashlight has been installed" />
 
-      <p>Once your license is loaded it may need to be activated. If so, highlight your license in the list of licenses and
+      <p>Once your license is loaded it may need to be activated. If so,
+      highlight your license in the list of licenses and
       press 'Activate' to activate it. This step requires Internet access because the tool
-      contacts SureLogic to verify your license is authentic.</p> 
+      contacts SureLogic to verify your license is authentic. Your activated
+      license may need to be renewed every now and then, e.g., every six months.
+      To do this highlight the license and press 'Renew' to renew it. As with activation
+      this step requires Internet access because the tool contacts SureLogic to verify
+      your license is authentic.</p> 
       
       <p>See the 'Getting started' chapter of any of the tool User
       Guides for information on how you install your license and get
       up and running with the tool. The tool User Guides can by opened
       by selecting 'Help | Help Contents' from the Eclipse main
-      menu</p>
+      menu. Alternatively you can choose the 'Save Documentation As...' menu
+      item from any of the SureLogic tools to save an HTML version of
+      the documentation to your disk and use your favorite browser
+      to read the tool documentation.</p>
       </li>
 
       <li>
-	<p>To run the tutorials for Sierra, Flashlight, or JSure
-	select the 'Run <em>Tool</em> Tutorials' menu choice from the
-	Eclipse main menu for that tool. For example, For the
-	JSure tool you would select 'JSure | Run JSure
-	Tutorials' from the Eclipse main menu as shown in the figure
-	below.</p>
+	  <p>To run the tutorials for Sierra, Flashlight, or JSure
+	  select the 'Install Tutorial Projects' menu choice from the
+	  Eclipse main menu for that tool. For example, For the
+	  JSure tool you would select 'JSure | Install Tutorial Projects'
+	  from the Eclipse main menu as shown in the figure below.</p>
 
-	<img src="./images/install-tutorials-menu.png" alt="Main menu choice to install and run the JSure tutorials" />
+	  <img src="./images/install-tutorials-menu.png" alt="Main menu choice to install the JSure tutorials" />
 
-	<p>This action will import the tutorial projects into your
-	workspace and open the Eclipse help up to the beginning of the
-	first tutorial. We recommend that you take the time to step
-	through each tutorial.</p>
+	  <p>This action will import the tutorial projects into your
+	  workspace and open the Eclipse help up to the beginning of the
+	  first tutorial. We recommend that you take the time to step
+	  through each tutorial.</p>
 
-	<p>Also notice the 'Send Tip for Improvement' and 'Send
-	Problem Report' menu items in the figure above. These menu
-	items are your <em>direct link</em> to interact with the
-	SureLogic engineers about your ideas to improve our tools and
-	to report any problems you encounter.</p>
+	  <p>Also notice the 'Send Tip for Improvement' and 'Send
+	  Problem Report' menu items in the figure above. These menu
+	  items are your <em>direct link</em> to interact with the
+	  SureLogic engineers about your ideas to improve our tools and
+	  to report any problems you encounter. JSure (as shown above)
+	  allows you to send annotations you have changed on libraries
+	  to SureLogic for consideration in future releases via
+	  the 'Send Library Annotation Changes' menu item.</p>
       </li>
+ 
       <li>
-	<p>To learn more about how to use the tools select 'Help |
-	Help Contents' and open the Sierra, Flashlight, or JSure User
-	Guides. If you have installed JSure, you should also read the
-	JSure Annotation Guide. These guides contain tutorial and
-	reference information about how to use the tools
-	effectively.</p>
+      <p>To learn more about how to use the tools select 'Help |
+      Help Contents' and open the Sierra, Flashlight, or JSure User
+      Guides. If you have installed JSure, you should also read the
+      JSure Annotation Guide. These guides contain tutorial and
+      reference information about how to use the tools
+      effectively. You may also use the 'Save Documentation As...'
+      menu item to save a copy of the documentation to your disk
+      in HTML format which can be loaded into any browser.</p>
       </li>
+
       <li>
-	<p>You can stay current with the latest versions of all of the SureLogic
-	tools by checking for updates from Eclipse. If you have not configured
-	Eclipse to periodically check for updates, you can check for tool
-	updates by selecting 'Help | Check For Updates'.  This will check
-	the SureLogic update site at <tt>[[UPS]]</tt> for any updates, regardless
-	of whether you installed the tools from the	archive site or from the remote site.</p>
+      <p>You can stay current with the latest versions of all of the SureLogic
+      tools by checking for updates from Eclipse. If you have not configured
+      Eclipse to periodically check for updates, you can check for tool
+      updates by selecting 'Help | Check For Updates'.  This will check
+      the SureLogic update site at <tt>[[UPS]]</tt> for any updates, regardless
+      of whether you installed the tools from the	archive site or from the remote site.</p>
       </li>
     </ol>
     

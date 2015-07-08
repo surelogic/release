@@ -30,23 +30,22 @@
       <import plugin="com.surelogic.sierra.tool"/>
       <import plugin="com.surelogic.sierra.jdbc"/>
       <import plugin="org.eclipse.ui"/>
-      <import plugin="org.eclipse.ui.console"/>
       <import plugin="org.eclipse.ui.ide"/>
       <import plugin="org.eclipse.core.runtime"/>
       <import plugin="org.eclipse.core.resources"/>
-      <import plugin="org.eclipse.jdt"/>
       <import plugin="org.eclipse.jdt.core"/>
       <import plugin="org.eclipse.jdt.ui"/>
-      <import plugin="org.eclipse.jdt.launching"/>
-      <import plugin="org.apache.ant"/>
-      <import plugin="org.eclipse.ui.browser"/>
       <import plugin="org.eclipse.ui.editors"/>
       <import plugin="org.eclipse.jface.text"/>
       <import plugin="org.eclipse.ui.workbench.texteditor"/>
       <import plugin="org.eclipse.help"/>
+      <import plugin="org.eclipse.jdt.launching"/>
       <import plugin="org.eclipse.ui.views"/>
       <import plugin="org.eclipse.core.filesystem"/>
       <import plugin="org.eclipse.debug.ui"/>
+      <import plugin="org.eclipse.equinox.security"/>
+      <import plugin="org.eclipse.compare"/>
+      <import plugin="org.eclipse.debug.core"/>
    </requires>
 
    <plugin

@@ -40,11 +40,13 @@
       <import plugin="org.eclipse.ui.editors"/>
       <import plugin="org.eclipse.jdt.core"/>
       <import plugin="org.eclipse.jface.text"/>
-      <import plugin="com.android.ide.eclipse.base" version="20.0.0" match="greaterOrEqual"/>
-      <import plugin="com.android.ide.eclipse.adt" version="20.0.0" match="greaterOrEqual"/>
-      <import plugin="com.android.ide.eclipse.ddms" version="20.0.0" match="greaterOrEqual"/>
       <import plugin="com.surelogic.flashlight.client.eclipse"/>
       <import plugin="com.surelogic.flashlight.common"/>
+      <import plugin="com.surelogic.flashlight.dex2jar"/>
+      <import plugin="com.android.ide.eclipse.adt" version="22.3.0" match="greaterOrEqual"/>
+      <import plugin="com.android.ide.eclipse.base" version="22.3.0" match="greaterOrEqual"/>
+      <import plugin="com.android.ide.eclipse.ddms" version="22.3.0" match="greaterOrEqual"/>
+      <import plugin="org.eclipse.jdt.junit.runtime"/>
    </requires>
 
    <plugin

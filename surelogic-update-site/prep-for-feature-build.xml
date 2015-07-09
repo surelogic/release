@@ -17,7 +17,7 @@
 	</target>
 
 	<target name="deploy-instrumentation">
-		<ant antfile="flashlight.xml" dir="../../flashlight/flashlight-instrumentation-5.0" target="build-jars" />
+		<ant dir="../../flashlight/flashlight-instrumentation" />
 		<echo>Flashlight instrumentation built and deployed</echo>
 	</target>
 	<target name="deploy-ant">

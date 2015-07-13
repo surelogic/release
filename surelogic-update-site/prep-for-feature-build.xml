@@ -23,10 +23,13 @@
 	<target name="deploy-ant">
 		<delete quiet="true" dir="${ant.dir}" />
 		<mkdir dir="${ant.dir}" />
-		<ant antfile="build.xml" dir="../../flashlight/flashlight-ant" target="build-jars" />
+		<ant antfile="build.xml" dir="../../flashlight/flashlight-ant" />
 		<ant antfile="build.xml" dir="../../sierra/sierra-ant" />
 		<ant antfile="build.xml" dir="../../jsure/jsure-ant" />
 		<copy todir="${ant.dir}">
+			<fileset dir="../../flashlight/flashlight-ant/build">
+				<include name="flashlight-ant*.zip" />
+			</fileset>
 			<fileset dir="../../jsure/jsure-ant/build">
 				<include name="jsure-ant*.zip" />
 			</fileset>

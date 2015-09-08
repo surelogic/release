@@ -66,13 +66,6 @@
          unpack="false"/>
 
    <plugin
-         id="com.surelogic.jsure.design.intent.help"
-         download-size="0"
-         install-size="0"
-         version="5.6.1.qualifier"
-         unpack="false"/>
-
-   <plugin
          id="com.surelogic.common.core"
          download-size="0"
          install-size="0"

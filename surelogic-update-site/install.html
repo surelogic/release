@@ -42,25 +42,26 @@
     <h2 class="title">Downloading and Installing the Eclipse-based SureLogic Tools</h2>
     
     <p>The current SureLogic tool release is version [[VER]]. You must be running
-    Eclipse on a Java 7 (or higher) VM (see below).</p>
+    Eclipse on a Java 7 (or higher) VM (more details below).</p>
     
     <p> It should take no more than 5 minutes for you to get up and
     running if you already have a working Eclipse installed on your
     machine. If you do not have Eclipse please go to the <a
     href="http://www.eclipse.org/downloads/">Eclipse Download Site</a>
     and download and install a copy. If you have any problems getting
-    up and running, please call Tim Halloran at (412) 722-3338 for
-    help. We want you to have a good experience with our product and
+    our tools up and running, please email
+    <a href="mailto:support@surelogic.com">support@surelogic.com</a> or
+    file a report in our <a href="http://surelogic.com/bugzilla/index.cgi">Bugzilla</a>.
+    We want you to have a good experience with our product and
     are ready to help. We realize that it can be difficult to navigate the
-    Eclipse plug-in installation and management user interface. Feel
-    free to also file any problems or questions on Bugzilla at our website.</p>
+    Eclipse plug-in installation and management user interface.</p>
 
     <p><a class="btn" href="./[[ZIP]]">Click to download an archived update site
     for SureLogic tools version [[VER]] you can load into Eclipse</a></p>
     
     <p class="cen">or</p>
     
-    <p><a class="btn" href="./install.html">point your Eclipse at the SureLogic
+    <p><a class="btn">point your Eclipse at the SureLogic
     update site:</a></p>
 
     <p class="cencode">[[UPS]]</p>
@@ -69,8 +70,13 @@
     archived Eclipse update site you can use to install
     the tools in your Eclipse IDE. The release is installed (and
     uninstalled) via the normal Eclipse mechanisms. Detailed
-    instructions are given below. The following tools are
-    available as Eclipse features:</p>
+    instructions are given below.</p>
+    
+    <h3 class="title">The Eclipse-based SureLogic Tools</h3>
+    
+    <p>When you install the tools into your Eclipse you can choose which to
+    install. This section describes each feature to help you decide what to
+    install. The following tools are available as Eclipse features:</p>
 
     <dl>
       <dt><em>Flashlight Client</em></dt>
@@ -105,6 +111,8 @@
       this feature is recommended. The  normal <em>Sierra Client</em> is required for this
       feature to install successfully.</dd>
     </dl>
+    
+    <h3 class="title">Getting Ready to Install</h3>
 
     <p>The tools may be installed and used in versions 3.7.2 and
     higher of Eclipse (higher being recommend).
@@ -150,26 +158,38 @@
 512m</pre>
 
     <p>Most modern Eclipse releases set this to 265 MB which might be okay for most uses.
-    The best solution is to use a Java 8 VM (in which Oracle removed Perm Gen altogether).</p>
+    The best solution is to use a Java 8 VM in which Oracle
+    <a href="http://openjdk.java.net/jeps/122">removed Perm Gen</a>&mdash;so you
+    don't have to worry about it.</p>
+    
+    <h3 class="title">Installation Step By Step</h3>
     
     <ol>
       <li>
-	  <p>We find that installing the tools, especially for the first time, is
-	  better done from an archived update site, which you can find <a
-	  href="./[[ZIP]]">here</a> (the same file downloaded by the above button). This archive
-	  contains the Sierra, JSure, and Flashlight features.  If you are an
-	  advanced Eclipse user, you can choose to use our update site, located at
-	  <tt>[[UPS]]</tt>, and skip to step 3.</p>
-      </li>
-
-      <li>
-	  <p>Select 'Help | Install New Software&hellip;' to open the 'Install'
-	  dialog.  Click the 'Add&hellip;' button in the upper-right of the
-	  dialog.  In the dialog that opens select the
-	  'Archive&hellip;' button and point the file selection dialog that
-	  appears to the to the SureLogic archived update site file downloaded
-	  in step 1, then press 'Open' followed by 'OK'.  The 'Install' dialog
-	  should appear as shown in the figure below.</p>
+	  <p>Select 'Help | Install New Software&hellip;' on the Eclipse main menu to open the 'Install'
+	  dialog.</p>
+	  <img src="./images/eclipse-menu.png" alt="Menu item to open the Install dialog in Eclipse" />
+	  <img src="./images/install-dialog.png" alt="Install dialog in Eclipse" />
+	  <p>At this point you have the option of installing using the archived update site or
+	  installing using the SureLogic web-based update site directly.</p> 
+	  
+	  <ol>
+	    <li>To install using the downloaded <a href="./[[ZIP]]">archived update site</a> file,
+	    click the 'Add&hellip;' button in the upper-right of the
+	    dialog.  In the dialog that opens select the
+	    'Archive&hellip;' button and point the file selection dialog that
+	    appears to the to the archived update site file you downloaded.
+	    Press 'Open' to choose the file, followed by 'OK' to return to the
+	    'Install' dialog.</li>
+	    <li>To install using the SureLogic update site, click the 'Add&hellip;'
+	    button in the upper-right of the dialog. Copy and paste the URL <tt>[[UPS]]</tt>
+	    into the 'Location:' text box. Press 'OK' to return to the 'Install' dialog.</li>
+	  </ol>
+	  </li>
+	  
+	  <li>
+	  <p>At this point, regardless of which installation method you choose, the dialog
+	  should list the SureLogic tool features as shown below.</p>
 
 	  <img src="./images/install-tools-in-eclipse.png" alt="Selecting features to install in Eclipse" />
 
@@ -197,10 +217,10 @@
 
       <img src="./images/install-license-menu.png" alt="Main menu choice to install your license" />
 
-      <p>In the dialog that appears, press the 'Install from File' if you saved your license in a file
+      <p>In the dialog that appears, press the 'Install from File' if you saved your license to a file
       or 'Install from Clipboard' if you copied the text of your license from an email, respectively.</p>
 
-      <img src="./images/install-license-dialog.png" alt="SureLogic license management dialog showing a license to use Flashlight has been installed" />
+      <img src="./images/install-license-dialog.png" alt="SureLogic license management dialog showing a license has been installed" />
 
       <p>Once your license is loaded it may need to be activated. If so,
       highlight your license in the list of licenses and
@@ -248,8 +268,7 @@
       <li>
       <p>To learn more about how to use the tools select 'Help |
       Help Contents' and open the Sierra, Flashlight, or JSure User
-      Guides. If you have installed JSure, you should also read the
-      JSure Annotation Guide. These guides contain tutorial and
+      Guides. These guides contain tutorial and
       reference information about how to use the tools
       effectively. You may also use the 'Save Documentation As...'
       menu item to save a copy of the documentation to your disk
@@ -278,13 +297,13 @@
     
       <tr><td>Flashlight</td>
           <td><a href="ant/flashlight-ant-[[SVER]].zip">flashlight-ant-[[SVER]].zip</a></td>
-          <td>&nbsp;</td></tr>
+          <td>Under Development</td></tr>
       <tr><td>JSure</td>
           <td><a href="ant/jsure-ant-[[SVER]].zip">jsure-ant-[[SVER]].zip</a></td>
-          <td>&nbsp;</td></tr>
+          <td>Under Development</td></tr>
       <tr><td>Sierra</td>
           <td><a href="ant/sierra-ant-[[SVER]].zip">sierra-ant-[[SVER]].zip</a></td>
-          <td>&nbsp;</td></tr>
+          <td>Under Development</td></tr>
     </table>
 
    <p>

@@ -103,7 +103,7 @@
 		</copy>
 		<!-- copy and determine name for promises JAR (version can be different from tools) -->
 		<path id="promises.jar.id">
-			<fileset dir="../../jsure/promises-x/build">
+			<fileset dir="../../common/common/lib/runtime">
 				<include name="promises*.jar" />
 			</fileset>
 		</path>

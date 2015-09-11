@@ -5,6 +5,7 @@
 
 	<property name="build" location="${basedir}/build" />
 	<property name="build.stage" location="${basedir}/build/stage" />
+	<property name="build.stage.docs" location="${build.stage}/docs" />
 
 	<!-- Trying to determine the release version from the help plug-in -->
 	<!-- Hack that reads the site.xml to extract the release version -->
@@ -85,6 +86,20 @@
 				<include name="mvn/**" />
 				<exclude name="**/.*" />
 			</fileset>
+		</copy>
+		<!-- prep stage for surelogic.com/static/eclipse/docs location -->
+		<mkdir dir="${build.stage.docs}" />
+		<copy todir="${build.stage.docs}/promises">
+			<fileset dir="../../jsure/promises-x/build/javadoc" />
+		</copy>
+		<copy todir="${build.stage.docs}/flashlight-guide">
+			<fileset dir="../../documentation/surelogic-docs/build/flashlight-guide/html" />
+		</copy>
+		<copy todir="${build.stage.docs}/jsure-guide">
+			<fileset dir="../../documentation/surelogic-docs/build/jsure-guide/html" />
+		</copy>
+		<copy todir="${build.stage.docs}/sierra-guide">
+			<fileset dir="../../documentation/surelogic-docs/build/sierra-guide/html" />
 		</copy>
 		<!-- fix the install.html file -->
 		<loadfile property="install.html" srcFile="${basedir}/install.html">

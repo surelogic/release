@@ -101,6 +101,15 @@
 		<copy todir="${build.stage.docs}/sierra-guide">
 			<fileset dir="../../documentation/surelogic-docs/build/sierra-guide/html" />
 		</copy>
+		<!-- copy and determine name for promises JAR (version can be different from tools) -->
+		<path id="promises.jar.id">
+			<fileset dir="../../jsure/promises-x/build">
+				<include name="promises*.jar" />
+			</fileset>
+		</path>
+		<property name="promises.jar.fullpath" refid="promises.jar.id" />
+		<copy todir="${build.stage.docs}/promises" file="${promises.jar.fullpath}" />
+		<basename property="promises.jar" file="${promises.jar.fullpath}" />
 		<!-- fix the install.html file -->
 		<loadfile property="install.html" srcFile="${basedir}/install.html">
 			<filterchain>
@@ -115,6 +124,9 @@
 				</tokenfilter>
 				<tokenfilter>
 					<replaceregex pattern="\[\[UPS\]\]" replace="${update.site}" flags="g" />
+				</tokenfilter>
+				<tokenfilter>
+					<replaceregex pattern="\[\[PJAR\]\]" replace="${promises.jar}" flags="g" />
 				</tokenfilter>
 			</filterchain>
 		</loadfile>

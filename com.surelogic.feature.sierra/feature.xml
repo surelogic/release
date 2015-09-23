@@ -2,7 +2,7 @@
 <feature
       id="com.surelogic.feature.sierra"
       label="Sierra Client"
-      version="5.6.1.qualifier"
+      version="5.7.0.qualifier"
       provider-name="SureLogic, Inc."
       plugin="com.surelogic.sierra.client.eclipse">
 
@@ -11,11 +11,11 @@
    </description>
 
    <copyright url="http://surelogic.com">
-      Copyright (c) 2012 SureLogic, Inc. All rights reserved.
+      Copyright (c) 2015 SureLogic, Inc. All rights reserved.
    </copyright>
 
-   <license url="http://surelogic.com/license/eula.html">
-      The EULA can be found at http://surelogic.com/license/eula.html
+   <license url="http://surelogic.com/static/license/eula.html">
+      The EULA can be found at http://surelogic.com/static/license/eula.html
    </license>
 
    <url>
@@ -52,66 +52,66 @@
          id="com.surelogic.sierra.client.eclipse"
          download-size="0"
          install-size="0"
-         version="5.6.1.qualifier"
+         version="5.7.0.qualifier"
          unpack="false"/>
 
    <plugin
          id="com.surelogic.sierra.tool"
          download-size="0"
          install-size="0"
-         version="5.6.1.qualifier"/>
+         version="5.7.0.qualifier"/>
 
    <plugin
          id="com.surelogic.sierra.jdbc"
          download-size="0"
          install-size="0"
-         version="5.6.1.qualifier"
+         version="5.7.0.qualifier"
          unpack="false"/>
 
    <plugin
          id="com.surelogic.common"
          download-size="0"
          install-size="0"
-         version="5.6.1.qualifier"/>
+         version="5.7.0.qualifier"/>
 
    <plugin
          id="com.surelogic.sierra.message"
          download-size="0"
          install-size="0"
-         version="5.6.1.qualifier"
+         version="5.7.0.qualifier"
          unpack="false"/>
 
    <plugin
          id="com.surelogic.sierra.client.eclipse.help"
          download-size="0"
          install-size="0"
-         version="5.6.1.qualifier"
+         version="5.7.0.qualifier"
          unpack="false"/>
 
    <plugin
          id="com.surelogic.common.core"
          download-size="0"
          install-size="0"
-         version="5.6.1.qualifier"
+         version="5.7.0.qualifier"
          unpack="false"/>
 
    <plugin
          id="com.surelogic.common.ui"
          download-size="0"
          install-size="0"
-         version="5.6.1.qualifier"
+         version="5.7.0.qualifier"
          unpack="false"/>
 
    <plugin
          id="com.surelogic.sierra.fb"
          download-size="0"
          install-size="0"
-         version="3.0.1.qualifier"/>
+         version="5.7.0.qualifier"/>
 
    <plugin
          id="com.surelogic.sierra.pmd"
          download-size="0"
          install-size="0"
-         version="5.3.3.qualifier"/>
+         version="5.7.0.qualifier"/>
 
 </feature>

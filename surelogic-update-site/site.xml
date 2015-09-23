@@ -3,19 +3,19 @@
    <description name="SureLogic Tools Update Site" url="http://surelogic.com/static/eclipse">
       Releases of Eclipse-based tools from SureLogic, Inc.
    </description>
-   <feature url="features/com.surelogic.feature.flashlight_5.6.1.qualifier.jar" id="com.surelogic.feature.flashlight" version="5.6.1.qualifier">
+   <feature url="features/com.surelogic.feature.flashlight_5.7.0.qualifier.jar" id="com.surelogic.feature.flashlight" version="5.7.0.qualifier">
       <category name="Flashlight"/>
    </feature>
-   <feature url="features/com.surelogic.feature.flashlight.android_5.6.1.qualifier.jar" id="com.surelogic.feature.flashlight.android" version="5.6.1.qualifier">
+   <feature url="features/com.surelogic.feature.flashlight.android_5.7.0.qualifier.jar" id="com.surelogic.feature.flashlight.android" version="5.7.0.qualifier">
       <category name="Flashlight"/>
    </feature>
-   <feature url="features/com.surelogic.feature.jsure_5.6.1.qualifier.jar" id="com.surelogic.feature.jsure" version="5.6.1.qualifier">
+   <feature url="features/com.surelogic.feature.jsure_5.7.0.qualifier.jar" id="com.surelogic.feature.jsure" version="5.7.0.qualifier">
       <category name="JSure"/>
    </feature>
-   <feature url="features/com.surelogic.feature.sierra_5.6.1.qualifier.jar" id="com.surelogic.feature.sierra" version="5.6.1.qualifier">
+   <feature url="features/com.surelogic.feature.sierra_5.7.0.qualifier.jar" id="com.surelogic.feature.sierra" version="5.7.0.qualifier">
       <category name="Sierra"/>
    </feature>
-   <feature url="features/com.surelogic.feature.sierra.teamserver_5.6.1.qualifier.jar" id="com.surelogic.feature.sierra.teamserver" version="5.6.1.qualifier">
+   <feature url="features/com.surelogic.feature.sierra.teamserver_5.7.0.qualifier.jar" id="com.surelogic.feature.sierra.teamserver" version="5.7.0.qualifier">
       <category name="Sierra"/>
    </feature>
    <category-def name="Flashlight" label="Flashlight">

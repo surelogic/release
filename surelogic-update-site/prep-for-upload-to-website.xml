@@ -47,6 +47,7 @@
 	</loadfile>
 
 	<property name="release.zip" value="surelogic-tools-${release-version}.zip" />
+	<property name="tools.version" value="surelogic-tools-version.txt" />
 	<property name="update.site" value="http://surelogic.com/static/eclipse" />
 	<property name="website.zip" value="upload-to-website.zip" />
 
@@ -131,6 +132,7 @@
 			</filterchain>
 		</loadfile>
 		<echo file="${build.stage}/install.html" message="${install.html}" />
+		<echo file="${build.stage}/${tools.version}" message="${release-version}" />
 		<zip destfile="${basedir}/${website.zip}" level="9">
 			<zipfileset dir="${build.stage}" prefix="stage" />
 		</zip>

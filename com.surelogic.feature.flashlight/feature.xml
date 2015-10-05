@@ -2,7 +2,7 @@
 <feature
       id="com.surelogic.feature.flashlight"
       label="Flashlight Client"
-      version="5.7.0.qualifier"
+      version="5.7.1.qualifier"
       provider-name="SureLogic, Inc."
       plugin="com.surelogic.flashlight.client.eclipse">
 
@@ -50,47 +50,47 @@
          id="com.surelogic.flashlight.client.eclipse"
          download-size="0"
          install-size="0"
-         version="5.7.0.qualifier"
+         version="5.7.1.qualifier"
          unpack="false"/>
 
    <plugin
          id="com.surelogic.common"
          download-size="0"
          install-size="0"
-         version="5.7.0.qualifier"/>
+         version="5.7.1.qualifier"/>
 
    <plugin
          id="com.surelogic.flashlight.common"
          download-size="0"
          install-size="0"
-         version="5.7.0.qualifier"/>
+         version="5.7.1.qualifier"/>
 
    <plugin
          id="com.surelogic.flashlight.client.help"
          download-size="0"
          install-size="0"
-         version="5.7.0.qualifier"
+         version="5.7.1.qualifier"
          unpack="false"/>
 
    <plugin
          id="com.surelogic.common.core"
          download-size="0"
          install-size="0"
-         version="5.7.0.qualifier"
+         version="5.7.1.qualifier"
          unpack="false"/>
 
    <plugin
          id="com.surelogic.common.ui"
          download-size="0"
          install-size="0"
-         version="5.7.0.qualifier"
+         version="5.7.1.qualifier"
          unpack="false"/>
 
    <plugin
          id="com.surelogic.flashlight.dex2jar"
          download-size="0"
          install-size="0"
-         version="5.7.0.qualifier"
+         version="5.7.1.qualifier"
          unpack="false"/>
 
 </feature>
